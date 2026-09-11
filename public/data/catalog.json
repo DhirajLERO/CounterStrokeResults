@@ -1,0 +1,307 @@
+{
+  "methods": [
+    {
+      "id": "counterfactual_pt",
+      "label": "GradCF",
+      "secondary": "Wachter",
+      "family": "baseline"
+    },
+    {
+      "id": "cfproto",
+      "label": "CFProto",
+      "secondary": null,
+      "family": "baseline"
+    },
+    {
+      "id": "cfrl",
+      "label": "CFRL",
+      "secondary": null,
+      "family": "baseline"
+    },
+    {
+      "id": "leapfactual",
+      "label": "Leap",
+      "secondary": null,
+      "family": "baseline"
+    },
+    {
+      "id": "leapfactual_r",
+      "label": "Leap-R",
+      "secondary": null,
+      "family": "baseline"
+    },
+    {
+      "id": "graco_base_o2",
+      "label": "CS_sparse",
+      "secondary": "Graco O2",
+      "family": "counterstroke"
+    },
+    {
+      "id": "graco_base_o3",
+      "label": "CS_prox",
+      "secondary": "Graco O3",
+      "family": "counterstroke"
+    },
+    {
+      "id": "graco50",
+      "label": "CS_50",
+      "secondary": "Graco50",
+      "family": "counterstroke"
+    }
+  ],
+  "metricGroups": [
+    "Success",
+    "Proximity",
+    "Classifier",
+    "Embedding",
+    "Perceptual",
+    "Distribution",
+    "Batch / stratified"
+  ],
+  "metrics": [
+    {
+      "id": "success_class_changed_rate",
+      "label": "Success rate (class changed)",
+      "group": "Success",
+      "description": "Fraction of eval samples where the counterfactual achieves a successful flip.",
+      "direction": "higher",
+      "csvSource": "per_sample"
+    },
+    {
+      "id": "l2_distance",
+      "label": "L2 distance (proximity)",
+      "group": "Proximity",
+      "description": "Euclidean distance between original and counterfactual in pixel space.",
+      "direction": "lower",
+      "csvSource": "per_sample"
+    },
+    {
+      "id": "sparsity_count",
+      "label": "Sparsity count",
+      "group": "Proximity",
+      "description": "Number of pixels changed beyond a small threshold.",
+      "direction": "lower",
+      "csvSource": "per_sample"
+    },
+    {
+      "id": "sparsity_frac",
+      "label": "Sparsity fraction",
+      "group": "Proximity",
+      "description": "Fraction of pixels changed beyond ε = 1/255.",
+      "direction": "lower",
+      "csvSource": "per_sample"
+    },
+    {
+      "id": "p_true_orig",
+      "label": "P(true class) on original",
+      "group": "Classifier",
+      "description": "Task classifier probability of the true label on the original image.",
+      "direction": "context",
+      "csvSource": "per_sample"
+    },
+    {
+      "id": "p_true_cf",
+      "label": "P(true class) on CF",
+      "group": "Classifier",
+      "description": "Task classifier probability of the true label on the counterfactual.",
+      "direction": "context",
+      "csvSource": "per_sample"
+    },
+    {
+      "id": "delta_p_true",
+      "label": "Δ P(true class)",
+      "group": "Classifier",
+      "description": "Change in true-class probability after the counterfactual edit.",
+      "direction": "context",
+      "csvSource": "per_sample"
+    },
+    {
+      "id": "p_intended_target_cf",
+      "label": "P(intended target) on CF",
+      "group": "Classifier",
+      "description": "Classifier probability of the intended target class on the CF (targeted methods).",
+      "direction": "context",
+      "csvSource": "per_sample"
+    },
+    {
+      "id": "p_pred_cf",
+      "label": "P(predicted class) on CF",
+      "group": "Classifier",
+      "description": "Probability of the argmax predicted class on the counterfactual.",
+      "direction": "context",
+      "csvSource": "per_sample"
+    },
+    {
+      "id": "inception_sqdist_to_source_class_mean",
+      "label": "Embedding dist. to source class mean",
+      "group": "Embedding",
+      "description": "Squared L2 distance from CF embedding to the mean embedding of real images in the true class.",
+      "direction": "lower",
+      "csvSource": "per_sample"
+    },
+    {
+      "id": "inception_sqdist_to_predicted_class_mean",
+      "label": "Embedding dist. to predicted class mean",
+      "group": "Embedding",
+      "description": "Squared L2 distance from CF embedding to mean embedding of the predicted CF class.",
+      "direction": "lower",
+      "csvSource": "per_sample"
+    },
+    {
+      "id": "lpips_to_original",
+      "label": "LPIPS to original",
+      "group": "Perceptual",
+      "description": "Learned perceptual similarity vs the original image (lower = closer).",
+      "direction": "lower",
+      "csvSource": "per_sample"
+    },
+    {
+      "id": "lpips_to_random_pred_class",
+      "label": "LPIPS to random same-class ref",
+      "group": "Perceptual",
+      "description": "LPIPS vs a random real image from the predicted class reference pool.",
+      "direction": "lower",
+      "csvSource": "per_sample"
+    },
+    {
+      "id": "ssim_to_original",
+      "label": "SSIM to original",
+      "group": "Perceptual",
+      "description": "Structural similarity vs original (higher = closer).",
+      "direction": "higher",
+      "csvSource": "per_sample"
+    },
+    {
+      "id": "ssim_to_random_pred_class",
+      "label": "SSIM to random same-class ref",
+      "group": "Perceptual",
+      "description": "SSIM vs random reference from predicted class pool (higher = closer).",
+      "direction": "higher",
+      "csvSource": "per_sample"
+    },
+    {
+      "id": "frechet_inception_distance_cf_vs_originals",
+      "label": "FID (paired orig vs CF)",
+      "group": "Distribution",
+      "description": "Fréchet Inception Distance between paired originals and counterfactuals.",
+      "direction": "lower",
+      "csvSource": "distribution"
+    },
+    {
+      "id": "kid_mean_cf_vs_originals",
+      "label": "KID mean (paired orig vs CF)",
+      "group": "Distribution",
+      "description": "Kernel Inception Distance mean between originals and CFs.",
+      "direction": "lower",
+      "csvSource": "distribution"
+    },
+    {
+      "id": "kid_std_cf_vs_originals",
+      "label": "KID std (paired orig vs CF)",
+      "group": "Distribution",
+      "description": "Standard deviation of KID estimate.",
+      "direction": "lower",
+      "csvSource": "distribution"
+    },
+    {
+      "id": "cmmd_orig_vs_cf_distribution",
+      "label": "CLIP CMMD (orig vs CF distribution)",
+      "group": "Distribution",
+      "description": "Gaussian-kernel MMD between CLIP embeddings of originals and CFs.",
+      "direction": "lower",
+      "csvSource": "distribution"
+    },
+    {
+      "id": "frechet_inception_distance_vs_source_y_true",
+      "label": "Batch FID vs source class pool",
+      "group": "Batch / stratified",
+      "description": "FID between CF set and stratified real images (true-class stratification).",
+      "direction": "lower",
+      "csvSource": "batch_fid"
+    },
+    {
+      "id": "frechet_inception_distance_vs_predicted_class",
+      "label": "Batch FID vs predicted class pool",
+      "group": "Batch / stratified",
+      "description": "FID between CF set and stratified real images (predicted-class stratification).",
+      "direction": "lower",
+      "csvSource": "batch_fid"
+    },
+    {
+      "id": "cmmd_vs_source_y_true_class",
+      "label": "Per-sample CMMD vs source class",
+      "group": "Batch / stratified",
+      "description": "Per-CF CLIP MMD vs reference pool of the true class.",
+      "direction": "lower",
+      "csvSource": "cmmd_per_sample"
+    },
+    {
+      "id": "cmmd_vs_predicted_class",
+      "label": "Per-sample CMMD vs predicted class",
+      "group": "Batch / stratified",
+      "description": "Per-CF CLIP MMD vs reference pool of the predicted CF class.",
+      "direction": "lower",
+      "csvSource": "cmmd_per_sample"
+    },
+    {
+      "id": "cmmd_vs_stratified_source_y_true",
+      "label": "Stratified batch CMMD (source)",
+      "group": "Batch / stratified",
+      "description": "MMD between CF set and stratified real-image pool (true class).",
+      "direction": "lower",
+      "csvSource": "cmmd_batch"
+    },
+    {
+      "id": "cmmd_vs_stratified_predicted_class",
+      "label": "Stratified batch CMMD (predicted)",
+      "group": "Batch / stratified",
+      "description": "MMD between CF set and stratified real-image pool (predicted class).",
+      "direction": "lower",
+      "csvSource": "cmmd_batch"
+    }
+  ],
+  "heats": [
+    {
+      "id": "sum_intensity",
+      "label": "Sum intensity"
+    },
+    {
+      "id": "mean_intensity",
+      "label": "Mean intensity"
+    },
+    {
+      "id": "change_frequency",
+      "label": "Change frequency"
+    },
+    {
+      "id": "max_intensity",
+      "label": "Max intensity"
+    },
+    {
+      "id": "cochange_strict",
+      "label": "Co-change"
+    },
+    {
+      "id": "spatial_coherence",
+      "label": "Spatial coherence"
+    }
+  ],
+  "attribution": [
+    {
+      "id": "integrated_gradients",
+      "label": "Integrated Gradients"
+    },
+    {
+      "id": "input_x_gradient",
+      "label": "Input × Gradient"
+    },
+    {
+      "id": "smoothgrad",
+      "label": "SmoothGrad"
+    },
+    {
+      "id": "gradcam",
+      "label": "Grad-CAM"
+    }
+  ]
+}

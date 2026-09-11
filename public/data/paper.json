@@ -1,0 +1,55 @@
+{
+  "title": "CounterStroke: Investigating Evolutionary Image Counterfactual Generation",
+  "authors": [
+    {
+      "name": "Dhiraj Kumar Singh",
+      "email": "dhirajkumar.singh@ul.ie"
+    },
+    {
+      "name": "Conor Ryan",
+      "email": "conor.ryan@ul.ie"
+    }
+  ],
+  "affiliation": "Biocomputing & Developmental Systems (BDS) group, Department of Computer Science and Information Systems, University of Limerick, Ireland",
+  "keywords": [
+    "counterfactual explanations",
+    "evolutionary computation",
+    "explainable AI",
+    "image classification",
+    "multi-objective optimisation",
+    "feature attribution"
+  ],
+  "abstract": "Counterfactual explanations help interpret image classifiers by asking what changes would alter a prediction. Existing methods typically rely on gradient-based pixel-space optimisation or generative modelling. We introduce CounterStroke, an evolutionary framework that evolves structured drawing programs over the image. Evaluated on MNIST, CIFAR-10, and ImageNet-100, CounterStroke achieves 100% validity on all classification datasets (vs 81% GradCF and 52% CFProto on CIFAR), with substantially sparser edits. Aggregating successful phenotypes yields attribution maps competitive under SRG (MNIST 0.483, CIFAR 0.224). The same representation supports blank-canvas synthesis of classifier-sufficient evidence with no factual image.",
+  "highlights": [
+    {
+      "id": "validity",
+      "label": "Validity",
+      "value": "100%",
+      "detail": "MNIST, CIFAR-10, ImageNet-100"
+    },
+    {
+      "id": "cifar_baselines",
+      "label": "CIFAR baselines",
+      "value": "81% / 52%",
+      "detail": "GradCF / CFProto validity"
+    },
+    {
+      "id": "sparsity",
+      "label": "Sparsity effect",
+      "value": "r = −0.84",
+      "detail": "MNIST vs denser baselines"
+    },
+    {
+      "id": "srg",
+      "label": "SRG (MNIST)",
+      "value": "0.483",
+      "detail": "Phenotype attribution vs XAI"
+    }
+  ],
+  "contributions": [
+    "Grammar-guided evolutionary sketch programs that produce valid, sparse, inspectable image counterfactuals.",
+    "Benchmarks on MNIST, CIFAR-10, and ImageNet-100 against gradient, prototype, and generative methods, plus Deep-SCM (MorphoMNIST, CelebA).",
+    "Six phenotype-based attribution maps competitive under SRG on MNIST and CIFAR.",
+    "Blank-canvas synthesis of classifier-sufficient sketches from an empty image."
+  ]
+}

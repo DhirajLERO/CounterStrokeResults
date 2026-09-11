@@ -1,0 +1,1216 @@
+{
+  "dataset": "imagenet100",
+  "source": "/Users/23395885/Desktop/ImageCounterfactuals/GracoImage/results_bundle/raw/generation/Imagenet",
+  "methods": [
+    "counterfactual_pt",
+    "cfproto",
+    "cfrl",
+    "leapfactual",
+    "leapfactual_r",
+    "graco_base_o2",
+    "graco_base_o3",
+    "graco50"
+  ],
+  "metrics": {
+    "success_class_changed_rate": {
+      "id": "success_class_changed_rate",
+      "label": "Success rate (class changed)",
+      "group": "Success",
+      "direction": "higher",
+      "byMethod": {
+        "counterfactual_pt": {
+          "mean": 0.91,
+          "err": 0.02876234912646613,
+          "n": 100.0
+        },
+        "cfproto": {
+          "mean": 0.56,
+          "err": 0.049888765156985884,
+          "n": 100.0
+        },
+        "cfrl": {
+          "mean": 0.99,
+          "err": 0.01,
+          "n": 100.0
+        },
+        "leapfactual": {
+          "mean": 0.95,
+          "err": 0.021904291355759033,
+          "n": 100.0
+        },
+        "leapfactual_r": {
+          "mean": 0.97,
+          "err": 0.01714466079977653,
+          "n": 100.0
+        },
+        "graco_base_o2": {
+          "mean": 1.0,
+          "err": 0.0,
+          "n": 100.0
+        },
+        "graco_base_o3": {
+          "mean": 1.0,
+          "err": 0.0,
+          "n": 100.0
+        },
+        "graco50": {
+          "mean": 1.0,
+          "err": 0.0,
+          "n": 100.0
+        }
+      }
+    },
+    "l2_distance": {
+      "id": "l2_distance",
+      "label": "L2 distance (proximity)",
+      "group": "Proximity",
+      "direction": "lower",
+      "byMethod": {
+        "counterfactual_pt": {
+          "mean": 1.7872683934985618,
+          "err": 0.11010456348385049,
+          "n": 100.0
+        },
+        "cfproto": {
+          "mean": 0.33396926411600875,
+          "err": 0.028143277577380988,
+          "n": 100.0
+        },
+        "cfrl": {
+          "mean": 231.468830040946,
+          "err": 5.719388622870111,
+          "n": 100.0
+        },
+        "leapfactual": {
+          "mean": 106.89553022325441,
+          "err": 3.841171434264718,
+          "n": 100.0
+        },
+        "leapfactual_r": {
+          "mean": 110.10540324021134,
+          "err": 4.101485533187132,
+          "n": 100.0
+        },
+        "graco_base_o2": {
+          "mean": 3.322104146728009,
+          "err": 0.47322937325520853,
+          "n": 100.0
+        },
+        "graco_base_o3": {
+          "mean": 2.9331238262065216,
+          "err": 0.4302018168979493,
+          "n": 100.0
+        },
+        "graco50": {
+          "mean": 3.50493916297714,
+          "err": 0.4659917198558592,
+          "n": 100.0
+        }
+      }
+    },
+    "sparsity_count": {
+      "id": "sparsity_count",
+      "label": "Sparsity count",
+      "group": "Proximity",
+      "direction": "lower",
+      "byMethod": {
+        "counterfactual_pt": {
+          "mean": 42951.12,
+          "err": 4927.047961652108,
+          "n": 100.0
+        },
+        "cfproto": {
+          "mean": 526.2,
+          "err": 142.51829370436639,
+          "n": 100.0
+        },
+        "cfrl": {
+          "mean": 265045.97,
+          "err": 496.6948136126413,
+          "n": 100.0
+        },
+        "leapfactual": {
+          "mean": 263448.22,
+          "err": 244.04717360677233,
+          "n": 100.0
+        },
+        "leapfactual_r": {
+          "mean": 263518.1,
+          "err": 271.709672186318,
+          "n": 100.0
+        },
+        "graco_base_o2": {
+          "mean": 66.41,
+          "err": 20.385982979003053,
+          "n": 100.0
+        },
+        "graco_base_o3": {
+          "mean": 92.88,
+          "err": 23.731031893861562,
+          "n": 100.0
+        },
+        "graco50": {
+          "mean": 68.97,
+          "err": 20.372314621326247,
+          "n": 100.0
+        }
+      }
+    },
+    "sparsity_frac": {
+      "id": "sparsity_frac",
+      "label": "Sparsity fraction",
+      "group": "Proximity",
+      "direction": "lower",
+      "byMethod": {
+        "counterfactual_pt": {
+          "mean": 0.16014406997684585,
+          "err": 0.018370592281414112,
+          "n": 100.0
+        },
+        "cfproto": {
+          "mean": 0.00196194673437655,
+          "err": 0.0005313821758308673,
+          "n": 100.0
+        },
+        "cfrl": {
+          "mean": 0.9882289534419825,
+          "err": 0.0018519360842818352,
+          "n": 100.0
+        },
+        "leapfactual": {
+          "mean": 0.9822717120986715,
+          "err": 0.0009099345406530627,
+          "n": 100.0
+        },
+        "leapfactual_r": {
+          "mean": 0.9825322610112489,
+          "err": 0.0010130746941172063,
+          "n": 100.0
+        },
+        "graco_base_o2": {
+          "mean": 0.0002476109514061933,
+          "err": 7.600952628793391e-05,
+          "n": 100.0
+        },
+        "graco_base_o3": {
+          "mean": 0.0003463048511761418,
+          "err": 8.848160495543013e-05,
+          "n": 100.0
+        },
+        "graco50": {
+          "mean": 0.00025715596022413936,
+          "err": 7.595856355568711e-05,
+          "n": 100.0
+        }
+      }
+    },
+    "p_true_orig": {
+      "id": "p_true_orig",
+      "label": "P(true class) on original",
+      "group": "Classifier",
+      "direction": "context",
+      "byMethod": {
+        "counterfactual_pt": {
+          "mean": 0.6710641323291395,
+          "err": 0.041048958290122846,
+          "n": 100.0
+        },
+        "cfproto": {
+          "mean": 0.6710641323291395,
+          "err": 0.041048958290122846,
+          "n": 100.0
+        },
+        "cfrl": {
+          "mean": 0.6710641323291395,
+          "err": 0.041048958290122846,
+          "n": 100.0
+        },
+        "leapfactual": {
+          "mean": 0.6710641323291395,
+          "err": 0.041048958290122846,
+          "n": 100.0
+        },
+        "leapfactual_r": {
+          "mean": 0.6710641323291395,
+          "err": 0.041048958290122846,
+          "n": 100.0
+        },
+        "graco_base_o2": {
+          "mean": 0.6710641323291395,
+          "err": 0.041048958290122846,
+          "n": 100.0
+        },
+        "graco_base_o3": {
+          "mean": 0.6710641323291395,
+          "err": 0.041048958290122846,
+          "n": 100.0
+        },
+        "graco50": {
+          "mean": 0.6710641323291395,
+          "err": 0.041048958290122846,
+          "n": 100.0
+        }
+      }
+    },
+    "p_true_cf": {
+      "id": "p_true_cf",
+      "label": "P(true class) on CF",
+      "group": "Classifier",
+      "direction": "context",
+      "byMethod": {
+        "counterfactual_pt": {
+          "mean": 0.09149122169550433,
+          "err": 0.028500674437452723,
+          "n": 100.0
+        },
+        "cfproto": {
+          "mean": 0.520209651175818,
+          "err": 0.04222670847139827,
+          "n": 100.0
+        },
+        "cfrl": {
+          "mean": 0.010042845276329862,
+          "err": 0.003182620187078794,
+          "n": 100.0
+        },
+        "leapfactual": {
+          "mean": 0.042240043495317535,
+          "err": 0.012327463907470153,
+          "n": 100.0
+        },
+        "leapfactual_r": {
+          "mean": 0.036203159288018774,
+          "err": 0.01269165762171967,
+          "n": 100.0
+        },
+        "graco_base_o2": {
+          "mean": 0.21665135876153838,
+          "err": 0.015992940875263605,
+          "n": 100.0
+        },
+        "graco_base_o3": {
+          "mean": 0.22347557332186735,
+          "err": 0.015709532647241738,
+          "n": 100.0
+        },
+        "graco50": {
+          "mean": 0.1841009232046974,
+          "err": 0.015647349103462792,
+          "n": 100.0
+        }
+      }
+    },
+    "delta_p_true": {
+      "id": "delta_p_true",
+      "label": "Δ P(true class)",
+      "group": "Classifier",
+      "direction": "context",
+      "byMethod": {
+        "counterfactual_pt": {
+          "mean": -0.579572911771944,
+          "err": 0.05822307033744265,
+          "n": 100.0
+        },
+        "cfproto": {
+          "mean": -0.15085448188270903,
+          "err": 0.02973504857029694,
+          "n": 100.0
+        },
+        "cfrl": {
+          "mean": -0.6610212864852656,
+          "err": 0.04093252338837227,
+          "n": 100.0
+        },
+        "leapfactual": {
+          "mean": -0.628824090401663,
+          "err": 0.042032791431730304,
+          "n": 100.0
+        },
+        "leapfactual_r": {
+          "mean": -0.6348609755519107,
+          "err": 0.04184817543698909,
+          "n": 100.0
+        },
+        "graco_base_o2": {
+          "mean": -0.45441277205944064,
+          "err": 0.035412745766746925,
+          "n": 100.0
+        },
+        "graco_base_o3": {
+          "mean": -0.4475885584950447,
+          "err": 0.03485853015531813,
+          "n": 100.0
+        },
+        "graco50": {
+          "mean": -0.4869632071707747,
+          "err": 0.036016902883857775,
+          "n": 100.0
+        }
+      }
+    },
+    "p_intended_target_cf": {
+      "id": "p_intended_target_cf",
+      "label": "P(intended target) on CF",
+      "group": "Classifier",
+      "direction": "context",
+      "byMethod": {
+        "counterfactual_pt": {
+          "mean": 0.1260051322731277,
+          "err": 0.03281217606665995,
+          "n": 100.0
+        },
+        "cfproto": {
+          "mean": 0.22361245164774948,
+          "err": 0.03078448707821551,
+          "n": 100.0
+        },
+        "cfrl": {
+          "mean": 0.01080981226137733,
+          "err": 0.003314222907709685,
+          "n": 100.0
+        },
+        "leapfactual": {
+          "mean": 0.04685454201537207,
+          "err": 0.01697552649809385,
+          "n": 100.0
+        },
+        "leapfactual_r": {
+          "mean": 0.04737793738173745,
+          "err": 0.016842748526489263,
+          "n": 100.0
+        },
+        "graco_base_o2": {
+          "mean": 0.18017792596366394,
+          "err": 0.03159141840922437,
+          "n": 100.0
+        },
+        "graco_base_o3": {
+          "mean": 0.16795638715020003,
+          "err": 0.030087405181446047,
+          "n": 100.0
+        },
+        "graco50": {
+          "mean": 0.17872550719490993,
+          "err": 0.03178938715848688,
+          "n": 100.0
+        }
+      }
+    },
+    "p_pred_cf": {
+      "id": "p_pred_cf",
+      "label": "P(predicted class) on CF",
+      "group": "Classifier",
+      "direction": "context",
+      "byMethod": {
+        "counterfactual_pt": {
+          "mean": 0.9906057357788086,
+          "err": 0.003882323384838235,
+          "n": 100.0
+        },
+        "cfproto": {
+          "mean": 0.6807136502116918,
+          "err": 0.03404694702200155,
+          "n": 100.0
+        },
+        "cfrl": {
+          "mean": 0.27023788452148434,
+          "err": 0.0009287643525745815,
+          "n": 100.0
+        },
+        "leapfactual": {
+          "mean": 0.402083527892828,
+          "err": 0.022283817710320238,
+          "n": 100.0
+        },
+        "leapfactual_r": {
+          "mean": 0.4224647987633944,
+          "err": 0.024516701193166984,
+          "n": 100.0
+        },
+        "graco_base_o2": {
+          "mean": 0.658529564589262,
+          "err": 0.020485368896309867,
+          "n": 100.0
+        },
+        "graco_base_o3": {
+          "mean": 0.6528838680684567,
+          "err": 0.019516517045993755,
+          "n": 100.0
+        },
+        "graco50": {
+          "mean": 0.7165122365951538,
+          "err": 0.01598216879198355,
+          "n": 100.0
+        }
+      }
+    },
+    "inception_sqdist_to_source_class_mean": {
+      "id": "inception_sqdist_to_source_class_mean",
+      "label": "Embedding dist. to source class mean",
+      "group": "Embedding",
+      "direction": "lower",
+      "byMethod": {
+        "counterfactual_pt": {
+          "mean": 94.7534434281183,
+          "err": 7.469846197760265,
+          "n": 100.0
+        },
+        "cfproto": {
+          "mean": 94.74828071025009,
+          "err": 7.621136423680359,
+          "n": 100.0
+        },
+        "cfrl": {
+          "mean": 263.51644651403825,
+          "err": 2.400488214886871,
+          "n": 100.0
+        },
+        "leapfactual": {
+          "mean": 342.78808090196674,
+          "err": 7.66383798358994,
+          "n": 100.0
+        },
+        "leapfactual_r": {
+          "mean": 337.73593817487813,
+          "err": 7.1594302506093,
+          "n": 100.0
+        },
+        "graco_base_o2": {
+          "mean": 98.23427725016809,
+          "err": 7.811318190022844,
+          "n": 100.0
+        },
+        "graco_base_o3": {
+          "mean": 98.26495221326807,
+          "err": 7.853358305162989,
+          "n": 100.0
+        },
+        "graco50": {
+          "mean": 98.53661410871237,
+          "err": 7.878206162294262,
+          "n": 100.0
+        }
+      }
+    },
+    "inception_sqdist_to_predicted_class_mean": {
+      "id": "inception_sqdist_to_predicted_class_mean",
+      "label": "Embedding dist. to predicted class mean",
+      "group": "Embedding",
+      "direction": "lower",
+      "byMethod": {
+        "counterfactual_pt": {
+          "mean": 183.4729488358468,
+          "err": 7.163684497488882,
+          "n": 100.0
+        },
+        "cfproto": {
+          "mean": 119.98351914013314,
+          "err": 8.531601659902007,
+          "n": 100.0
+        },
+        "cfrl": {
+          "mean": 321.6145998634561,
+          "err": 1.436527743048662,
+          "n": 100.0
+        },
+        "leapfactual": {
+          "mean": 322.7695186816654,
+          "err": 7.3534993330284,
+          "n": 100.0
+        },
+        "leapfactual_r": {
+          "mean": 312.99311638928026,
+          "err": 6.749901454490361,
+          "n": 100.0
+        },
+        "graco_base_o2": {
+          "mean": 175.33302676910873,
+          "err": 8.059379883914215,
+          "n": 100.0
+        },
+        "graco_base_o3": {
+          "mean": 177.4666635558189,
+          "err": 7.971921258763025,
+          "n": 100.0
+        },
+        "graco50": {
+          "mean": 176.05793458288395,
+          "err": 8.083220487017805,
+          "n": 100.0
+        }
+      }
+    },
+    "lpips_to_original": {
+      "id": "lpips_to_original",
+      "label": "LPIPS to original",
+      "group": "Perceptual",
+      "direction": "lower",
+      "byMethod": {
+        "counterfactual_pt": {
+          "mean": 0.0012672436317916003,
+          "err": 0.00040906067447360787,
+          "n": 100.0
+        },
+        "cfproto": {
+          "mean": 0.0001313986283981813,
+          "err": 4.8611250117538415e-05,
+          "n": 100.0
+        },
+        "cfrl": {
+          "mean": 0.8119812351465225,
+          "err": 0.0069350806491195235,
+          "n": 100.0
+        },
+        "leapfactual": {
+          "mean": 0.5765261024236679,
+          "err": 0.012821654440091923,
+          "n": 100.0
+        },
+        "leapfactual_r": {
+          "mean": 0.5970962393283844,
+          "err": 0.013690250369366188,
+          "n": 100.0
+        },
+        "graco_base_o2": {
+          "mean": 0.011285843251498557,
+          "err": 0.002408218182480701,
+          "n": 100.0
+        },
+        "graco_base_o3": {
+          "mean": 0.010535456171419324,
+          "err": 0.0023097865716752053,
+          "n": 100.0
+        },
+        "graco50": {
+          "mean": 0.011855147070091297,
+          "err": 0.0024138528068124495,
+          "n": 100.0
+        }
+      }
+    },
+    "lpips_to_random_pred_class": {
+      "id": "lpips_to_random_pred_class",
+      "label": "LPIPS to random same-class ref",
+      "group": "Perceptual",
+      "direction": "lower",
+      "byMethod": {
+        "counterfactual_pt": {
+          "mean": 0.7138158071041107,
+          "err": 0.007820252994496204,
+          "n": 100.0
+        },
+        "cfproto": {
+          "mean": 0.7139841118454933,
+          "err": 0.007822240011295849,
+          "n": 100.0
+        },
+        "cfrl": {
+          "mean": 0.782486327290535,
+          "err": 0.0058875394703655545,
+          "n": 100.0
+        },
+        "leapfactual": {
+          "mean": 0.7530623310804367,
+          "err": 0.008035141738068125,
+          "n": 100.0
+        },
+        "leapfactual_r": {
+          "mean": 0.7510315537452698,
+          "err": 0.006818546267704744,
+          "n": 100.0
+        },
+        "graco_base_o2": {
+          "mean": 0.7127578061819076,
+          "err": 0.008524423019684726,
+          "n": 100.0
+        },
+        "graco_base_o3": {
+          "mean": 0.7159188809990883,
+          "err": 0.008476203561560956,
+          "n": 100.0
+        },
+        "graco50": {
+          "mean": 0.7108904266357422,
+          "err": 0.008548028591992551,
+          "n": 100.0
+        }
+      }
+    },
+    "ssim_to_original": {
+      "id": "ssim_to_original",
+      "label": "SSIM to original",
+      "group": "Perceptual",
+      "direction": "higher",
+      "byMethod": {
+        "counterfactual_pt": {
+          "mean": 0.9946352487802506,
+          "err": 0.0009248395691574719,
+          "n": 100.0
+        },
+        "cfproto": {
+          "mean": 0.9997062301635742,
+          "err": 6.717827480286857e-05,
+          "n": 100.0
+        },
+        "cfrl": {
+          "mean": 0.07970560252666468,
+          "err": 0.004709822677062842,
+          "n": 100.0
+        },
+        "leapfactual": {
+          "mean": 0.3592240285128355,
+          "err": 0.01974769752443298,
+          "n": 100.0
+        },
+        "leapfactual_r": {
+          "mean": 0.3536803884804249,
+          "err": 0.019663535133955714,
+          "n": 100.0
+        },
+        "graco_base_o2": {
+          "mean": 0.9991858690977097,
+          "err": 0.00016499248690345035,
+          "n": 100.0
+        },
+        "graco_base_o3": {
+          "mean": 0.9990237462520599,
+          "err": 0.00018981287873960558,
+          "n": 100.0
+        },
+        "graco50": {
+          "mean": 0.999153327345848,
+          "err": 0.00016401526523485895,
+          "n": 100.0
+        }
+      }
+    },
+    "ssim_to_random_pred_class": {
+      "id": "ssim_to_random_pred_class",
+      "label": "SSIM to random same-class ref",
+      "group": "Perceptual",
+      "direction": "higher",
+      "byMethod": {
+        "counterfactual_pt": {
+          "mean": 0.17872911192476745,
+          "err": 0.013035213716204488,
+          "n": 100.0
+        },
+        "cfproto": {
+          "mean": 0.17813311453908678,
+          "err": 0.012494224799372412,
+          "n": 100.0
+        },
+        "cfrl": {
+          "mean": 0.07178100310266014,
+          "err": 0.005026884471622998,
+          "n": 100.0
+        },
+        "leapfactual": {
+          "mean": 0.28015176195651287,
+          "err": 0.013284264092343883,
+          "n": 100.0
+        },
+        "leapfactual_r": {
+          "mean": 0.29774672672152513,
+          "err": 0.014011704865541721,
+          "n": 100.0
+        },
+        "graco_base_o2": {
+          "mean": 0.1768135384470224,
+          "err": 0.012298613040263548,
+          "n": 100.0
+        },
+        "graco_base_o3": {
+          "mean": 0.17872907973825927,
+          "err": 0.012504091557160152,
+          "n": 100.0
+        },
+        "graco50": {
+          "mean": 0.1848844339139759,
+          "err": 0.013077892663296856,
+          "n": 100.0
+        }
+      }
+    },
+    "frechet_inception_distance_cf_vs_originals": {
+      "id": "frechet_inception_distance_cf_vs_originals",
+      "label": "FID (paired orig vs CF)",
+      "group": "Distribution",
+      "direction": "lower",
+      "byMethod": {
+        "counterfactual_pt": {
+          "mean": 2.9438124620791086,
+          "err": 0.0,
+          "n": 0.0
+        },
+        "cfproto": {
+          "mean": 1.4696960291445291,
+          "err": 0.0,
+          "n": 0.0
+        },
+        "cfrl": {
+          "mean": 407.0099517491548,
+          "err": 0.0,
+          "n": 0.0
+        },
+        "leapfactual": {
+          "mean": 273.1725998813631,
+          "err": 0.0,
+          "n": 0.0
+        },
+        "leapfactual_r": {
+          "mean": 265.2539751414489,
+          "err": 0.0,
+          "n": 0.0
+        },
+        "graco_base_o2": {
+          "mean": 9.247325583428562,
+          "err": 0.0,
+          "n": 0.0
+        },
+        "graco_base_o3": {
+          "mean": 8.609150817736008,
+          "err": 0.0,
+          "n": 0.0
+        },
+        "graco50": {
+          "mean": 10.052946077777506,
+          "err": 0.0,
+          "n": 0.0
+        }
+      }
+    },
+    "kid_mean_cf_vs_originals": {
+      "id": "kid_mean_cf_vs_originals",
+      "label": "KID mean (paired orig vs CF)",
+      "group": "Distribution",
+      "direction": "lower",
+      "byMethod": {
+        "counterfactual_pt": {
+          "mean": -0.0051260492764413,
+          "err": 0.0,
+          "n": 0.0
+        },
+        "cfproto": {
+          "mean": -0.0052460096776485,
+          "err": 0.0,
+          "n": 0.0
+        },
+        "cfrl": {
+          "mean": 0.5079312920570374,
+          "err": 0.0,
+          "n": 0.0
+        },
+        "leapfactual": {
+          "mean": 0.1478181630373001,
+          "err": 0.0,
+          "n": 0.0
+        },
+        "leapfactual_r": {
+          "mean": 0.1349602788686752,
+          "err": 0.0,
+          "n": 0.0
+        },
+        "graco_base_o2": {
+          "mean": -0.0046096825972199,
+          "err": 0.0,
+          "n": 0.0
+        },
+        "graco_base_o3": {
+          "mean": -0.0046329614706337,
+          "err": 0.0,
+          "n": 0.0
+        },
+        "graco50": {
+          "mean": -0.004252300132066,
+          "err": 0.0,
+          "n": 0.0
+        }
+      }
+    },
+    "kid_std_cf_vs_originals": {
+      "id": "kid_std_cf_vs_originals",
+      "label": "KID std (paired orig vs CF)",
+      "group": "Distribution",
+      "direction": "lower",
+      "byMethod": {
+        "counterfactual_pt": {
+          "mean": 0.0008336879545822,
+          "err": 0.0,
+          "n": 0.0
+        },
+        "cfproto": {
+          "mean": 0.0009779606480151,
+          "err": 0.0,
+          "n": 0.0
+        },
+        "cfrl": {
+          "mean": 0.0068172216415405,
+          "err": 0.0,
+          "n": 0.0
+        },
+        "leapfactual": {
+          "mean": 0.0111323734745383,
+          "err": 0.0,
+          "n": 0.0
+        },
+        "leapfactual_r": {
+          "mean": 0.0097290305420756,
+          "err": 0.0,
+          "n": 0.0
+        },
+        "graco_base_o2": {
+          "mean": 0.0012062003370374,
+          "err": 0.0,
+          "n": 0.0
+        },
+        "graco_base_o3": {
+          "mean": 0.0010825006756931,
+          "err": 0.0,
+          "n": 0.0
+        },
+        "graco50": {
+          "mean": 0.0012222884688526,
+          "err": 0.0,
+          "n": 0.0
+        }
+      }
+    },
+    "cmmd_orig_vs_cf_distribution": {
+      "id": "cmmd_orig_vs_cf_distribution",
+      "label": "CLIP CMMD (orig vs CF distribution)",
+      "group": "Distribution",
+      "direction": "lower",
+      "byMethod": {
+        "counterfactual_pt": {
+          "mean": 0.0141019852026857,
+          "err": 0.0,
+          "n": 0.0
+        },
+        "cfproto": {
+          "mean": 0.0001794581250269,
+          "err": 0.0,
+          "n": 0.0
+        },
+        "cfrl": {
+          "mean": 4.715476846914202,
+          "err": 0.0,
+          "n": 0.0
+        },
+        "leapfactual": {
+          "mean": 3.155852084852029,
+          "err": 0.0,
+          "n": 0.0
+        },
+        "leapfactual_r": {
+          "mean": 3.1073409215662817,
+          "err": 0.0,
+          "n": 0.0
+        },
+        "graco_base_o2": {
+          "mean": 0.1156760558631564,
+          "err": 0.0,
+          "n": 0.0
+        },
+        "graco_base_o3": {
+          "mean": 0.0918083022716231,
+          "err": 0.0,
+          "n": 0.0
+        },
+        "graco50": {
+          "mean": 0.127993683284755,
+          "err": 0.0,
+          "n": 0.0
+        }
+      }
+    },
+    "frechet_inception_distance_vs_source_y_true": {
+      "id": "frechet_inception_distance_vs_source_y_true",
+      "label": "Batch FID vs source class pool",
+      "group": "Batch / stratified",
+      "direction": "lower",
+      "byMethod": {
+        "counterfactual_pt": {
+          "mean": 126.61385524145874,
+          "err": 0.0,
+          "n": 0.0
+        },
+        "cfproto": {
+          "mean": 118.65358797031551,
+          "err": 0.0,
+          "n": 0.0
+        },
+        "cfrl": {
+          "mean": 339.2912629061011,
+          "err": 0.0,
+          "n": 0.0
+        },
+        "leapfactual": {
+          "mean": 283.95672233957976,
+          "err": 0.0,
+          "n": 0.0
+        },
+        "leapfactual_r": {
+          "mean": 282.9822746946104,
+          "err": 0.0,
+          "n": 0.0
+        },
+        "graco_base_o2": {
+          "mean": 121.1988341236389,
+          "err": 0.0,
+          "n": 0.0
+        },
+        "graco_base_o3": {
+          "mean": 123.85895687423437,
+          "err": 0.0,
+          "n": 0.0
+        },
+        "graco50": {
+          "mean": 127.79723745415112,
+          "err": 0.0,
+          "n": 0.0
+        }
+      }
+    },
+    "frechet_inception_distance_vs_predicted_class": {
+      "id": "frechet_inception_distance_vs_predicted_class",
+      "label": "Batch FID vs predicted class pool",
+      "group": "Batch / stratified",
+      "direction": "lower",
+      "byMethod": {
+        "counterfactual_pt": {
+          "mean": 132.60652804967307,
+          "err": 0.0,
+          "n": 0.0
+        },
+        "cfproto": {
+          "mean": 121.18183593920604,
+          "err": 0.0,
+          "n": 0.0
+        },
+        "cfrl": {
+          "mean": 311.6693498395757,
+          "err": 0.0,
+          "n": 0.0
+        },
+        "leapfactual": {
+          "mean": 289.20642565711665,
+          "err": 0.0,
+          "n": 0.0
+        },
+        "leapfactual_r": {
+          "mean": 277.6895499918422,
+          "err": 0.0,
+          "n": 0.0
+        },
+        "graco_base_o2": {
+          "mean": 140.33483393781484,
+          "err": 0.0,
+          "n": 0.0
+        },
+        "graco_base_o3": {
+          "mean": 138.7260880279468,
+          "err": 0.0,
+          "n": 0.0
+        },
+        "graco50": {
+          "mean": 136.07668242367689,
+          "err": 0.0,
+          "n": 0.0
+        }
+      }
+    },
+    "cmmd_vs_source_y_true_class": {
+      "id": "cmmd_vs_source_y_true_class",
+      "label": "Per-sample CMMD vs source class",
+      "group": "Batch / stratified",
+      "direction": "lower",
+      "byMethod": {
+        "counterfactual_pt": {
+          "mean": 2.032646703344243,
+          "err": 0.08660538572780704,
+          "n": 100.0
+        },
+        "cfproto": {
+          "mean": 1.9621430499664028,
+          "err": 0.08459243395267715,
+          "n": 100.0
+        },
+        "cfrl": {
+          "mean": 6.289604209524417,
+          "err": 0.06135222705188589,
+          "n": 100.0
+        },
+        "leapfactual": {
+          "mean": 5.605547836496729,
+          "err": 0.07688269651451547,
+          "n": 100.0
+        },
+        "leapfactual_r": {
+          "mean": 5.6493343909393845,
+          "err": 0.08323360224450925,
+          "n": 100.0
+        },
+        "graco_base_o2": {
+          "mean": 2.3321646126137763,
+          "err": 0.09028909750552365,
+          "n": 100.0
+        },
+        "graco_base_o3": {
+          "mean": 2.279074523868012,
+          "err": 0.08971388360210383,
+          "n": 100.0
+        },
+        "graco50": {
+          "mean": 2.339944946565833,
+          "err": 0.09023915938094423,
+          "n": 100.0
+        }
+      }
+    },
+    "cmmd_vs_predicted_class": {
+      "id": "cmmd_vs_predicted_class",
+      "label": "Per-sample CMMD vs predicted class",
+      "group": "Batch / stratified",
+      "direction": "lower",
+      "byMethod": {
+        "counterfactual_pt": {
+          "mean": 3.5415793512110243,
+          "err": 0.13693342816877457,
+          "n": 100.0
+        },
+        "cfproto": {
+          "mean": 2.4421590244529656,
+          "err": 0.12348102943871415,
+          "n": 100.0
+        },
+        "cfrl": {
+          "mean": 5.5265872893154695,
+          "err": 0.023974328836798658,
+          "n": 100.0
+        },
+        "leapfactual": {
+          "mean": 4.872609198239943,
+          "err": 0.09094128402007197,
+          "n": 100.0
+        },
+        "leapfactual_r": {
+          "mean": 4.901914427427647,
+          "err": 0.08737280637813524,
+          "n": 100.0
+        },
+        "graco_base_o2": {
+          "mean": 3.63969072547361,
+          "err": 0.13873642280037876,
+          "n": 100.0
+        },
+        "graco_base_o3": {
+          "mean": 3.615431886755187,
+          "err": 0.13669024536550228,
+          "n": 100.0
+        },
+        "graco50": {
+          "mean": 3.680523145317809,
+          "err": 0.14059657288087665,
+          "n": 100.0
+        }
+      }
+    },
+    "cmmd_vs_stratified_source_y_true": {
+      "id": "cmmd_vs_stratified_source_y_true",
+      "label": "Stratified batch CMMD (source)",
+      "group": "Batch / stratified",
+      "direction": "lower",
+      "byMethod": {
+        "counterfactual_pt": {
+          "mean": 0.0444969453208266,
+          "err": 0.0,
+          "n": 0.0
+        },
+        "cfproto": {
+          "mean": 0.0359190336565173,
+          "err": 0.0,
+          "n": 0.0
+        },
+        "cfrl": {
+          "mean": 4.66332677173642,
+          "err": 0.0,
+          "n": 0.0
+        },
+        "leapfactual": {
+          "mean": 3.12053380755195,
+          "err": 0.0,
+          "n": 0.0
+        },
+        "leapfactual_r": {
+          "mean": 2.9661059706656,
+          "err": 0.0,
+          "n": 0.0
+        },
+        "graco_base_o2": {
+          "mean": 0.140032307750948,
+          "err": 0.0,
+          "n": 0.0
+        },
+        "graco_base_o3": {
+          "mean": 0.1119195813223949,
+          "err": 0.0,
+          "n": 0.0
+        },
+        "graco50": {
+          "mean": 0.1478036412816408,
+          "err": 0.0,
+          "n": 0.0
+        }
+      }
+    },
+    "cmmd_vs_stratified_predicted_class": {
+      "id": "cmmd_vs_stratified_predicted_class",
+      "label": "Stratified batch CMMD (predicted)",
+      "group": "Batch / stratified",
+      "direction": "lower",
+      "byMethod": {
+        "counterfactual_pt": {
+          "mean": 0.0688522791094659,
+          "err": 0.0,
+          "n": 0.0
+        },
+        "cfproto": {
+          "mean": 0.0455954907698785,
+          "err": 0.0,
+          "n": 0.0
+        },
+        "cfrl": {
+          "mean": 5.529564207901405,
+          "err": 0.0,
+          "n": 0.0
+        },
+        "leapfactual": {
+          "mean": 2.6997642482122775,
+          "err": 0.0,
+          "n": 0.0
+        },
+        "leapfactual_r": {
+          "mean": 2.826128811209472,
+          "err": 0.0,
+          "n": 0.0
+        },
+        "graco_base_o2": {
+          "mean": 0.1806801778216904,
+          "err": 0.0,
+          "n": 0.0
+        },
+        "graco_base_o3": {
+          "mean": 0.1438815503564949,
+          "err": 0.0,
+          "n": 0.0
+        },
+        "graco50": {
+          "mean": 0.1805782677011258,
+          "err": 0.0,
+          "n": 0.0
+        }
+      }
+    }
+  }
+}

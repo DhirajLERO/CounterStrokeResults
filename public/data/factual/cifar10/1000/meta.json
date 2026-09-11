@@ -1,0 +1,118 @@
+{
+  "sample_idx": 1000,
+  "y_true": 3,
+  "y_true_name": "cat",
+  "y_intended_target": 4,
+  "n_population": 200,
+  "n_filtered": 48,
+  "top_class": 4,
+  "source": "fixture",
+  "distribution": {
+    "4": 40,
+    "3": 8
+  },
+  "o1_hist": {
+    "edges": [
+      -1,
+      -0.5,
+      0,
+      0.5
+    ],
+    "counts": [
+      20,
+      18,
+      10
+    ]
+  },
+  "methods": {
+    "counterfactual_pt": {
+      "file": "methods/counterfactual_pt.webp",
+      "pred_class": 4,
+      "pred_prob": 0.7
+    },
+    "cfproto": {
+      "file": "methods/cfproto.webp",
+      "pred_class": 4,
+      "pred_prob": 0.7
+    },
+    "cfrl": {
+      "file": "methods/cfrl.webp",
+      "pred_class": 4,
+      "pred_prob": 0.7
+    },
+    "leapfactual": {
+      "file": "methods/leapfactual.webp",
+      "pred_class": 4,
+      "pred_prob": 0.7
+    },
+    "leapfactual_r": {
+      "file": "methods/leapfactual_r.webp",
+      "pred_class": 4,
+      "pred_prob": 0.7
+    },
+    "graco_base_o2": {
+      "file": "methods/graco_base_o2.webp",
+      "pred_class": 4,
+      "pred_prob": 0.7
+    },
+    "graco_base_o3": {
+      "file": "methods/graco_base_o3.webp",
+      "pred_class": 4,
+      "pred_prob": 0.7
+    },
+    "graco50": {
+      "file": "methods/graco50.webp",
+      "pred_class": 4,
+      "pred_prob": 0.7
+    }
+  },
+  "population": [
+    {
+      "id": 0,
+      "file": "population/00.webp",
+      "pred_class": 4,
+      "pred_prob": 0.9,
+      "o1": -0.4,
+      "phenotype": "(stroke fixture 0)"
+    },
+    {
+      "id": 1,
+      "file": "population/01.webp",
+      "pred_class": 4,
+      "pred_prob": 0.85,
+      "o1": -0.4,
+      "phenotype": "(stroke fixture 1)"
+    },
+    {
+      "id": 2,
+      "file": "population/02.webp",
+      "pred_class": 4,
+      "pred_prob": 0.8,
+      "o1": -0.4,
+      "phenotype": "(stroke fixture 2)"
+    },
+    {
+      "id": 3,
+      "file": "population/03.webp",
+      "pred_class": 4,
+      "pred_prob": 0.75,
+      "o1": -0.4,
+      "phenotype": "(stroke fixture 3)"
+    }
+  ],
+  "heats": [
+    "sum_intensity",
+    "mean_intensity",
+    "change_frequency",
+    "max_intensity",
+    "cochange_strict",
+    "spatial_coherence"
+  ],
+  "attr": [
+    "integrated_gradients",
+    "input_x_gradient",
+    "smoothgrad",
+    "gradcam"
+  ],
+  "fixture": true
+}

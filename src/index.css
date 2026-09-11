@@ -1,0 +1,50 @@
+@import "./theme/tokens.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --paper: #f7f6f2;
+  --ink: #1c1c1a;
+  --muted: #5c5a56;
+  --teal: #0e6b5c;
+  --ul: #005335;
+  --ul-modern: #00b140;
+  --ul-heritage: #003726;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  @apply bg-paper text-ink font-sans antialiased;
+}
+
+.pixelated {
+  image-rendering: pixelated;
+}
+
+.figure-well {
+  @apply bg-white rounded-xl shadow-well overflow-hidden;
+}
+
+@layer utilities {
+  .hairline {
+    box-shadow: inset 0 0 0 1px rgba(28, 28, 26, 0.1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

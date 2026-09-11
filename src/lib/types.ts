@@ -111,6 +111,7 @@ export type BlankIndexItem = {
   mean_p_blank: number;
   mode_pred: number | null;
   has_csv: boolean;
+  has_success_image?: boolean;
 };
 
 export type BlankBin = {

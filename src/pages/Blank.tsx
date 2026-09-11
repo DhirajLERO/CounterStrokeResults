@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { Chip } from "../components/Chip";
 import { FigureWell } from "../components/FigureWell";
@@ -11,8 +11,25 @@ export function BlankPage() {
   const { dataset = "mnist", target } = useParams();
   const nav = useNavigate();
   const idx = useJson(`blank-${dataset}`, () => loadBlankIndex(dataset));
-  const targets = idx.data?.targets ?? [];
-  const selected = target != null ? Number(target) : targets[0]?.wanted_class;
+  const allTargets = idx.data?.targets ?? [];
+  const visibleTargets = useMemo(() => {
+    const list = idx.data?.targets ?? [];
+    if (dataset !== "imagenet100") return list;
+    return list.filter((t) => t.has_success_image !== false);
+  }, [dataset, idx.data]);
+  const requested = target != null ? Number(target) : null;
+  const selected =
+    requested != null && visibleTargets.some((t) => t.wanted_class === requested)
+      ? requested
+      : visibleTargets[0]?.wanted_class;
+
+  useEffect(() => {
+    if (dataset !== "imagenet100" || !idx.data) return;
+    if (requested == null || selected == null) return;
+    if (requested !== selected) {
+      nav(`/blank/${dataset}/${selected}`, { replace: true });
+    }
+  }, [dataset, idx.data, nav, requested, selected]);
   const meta = useJson(
     selected == null ? "blank-skip" : `blank-meta-${dataset}-${selected}`,
     () => loadBlankMeta(dataset, selected as number),
@@ -41,8 +58,14 @@ export function BlankPage() {
         ))}
       </div>
       <LoadGate error={idx.error} data={idx.data} hint="GPU harvest writes blank/{dataset}/index.json.">
-        <div className="mt-6 grid grid-cols-5 gap-2 sm:grid-cols-10">
-          {targets.map((t) => (
+        {dataset === "imagenet100" ? (
+          <p className="mt-6 text-xs text-muted">
+            Showing {visibleTargets.length} of {allTargets.length} classes with at least one successful
+            individual
+          </p>
+        ) : null}
+        <div className={`${dataset === "imagenet100" ? "mt-3" : "mt-6"} grid grid-cols-5 gap-2 sm:grid-cols-10`}>
+          {visibleTargets.map((t) => (
             <button
               key={t.wanted_class}
               type="button"

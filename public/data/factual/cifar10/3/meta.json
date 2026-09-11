@@ -1,0 +1,1240 @@
+{
+  "sample_idx": 3,
+  "y_true": 0,
+  "y_true_name": "airplane",
+  "y_intended_target": 8,
+  "n_population": 1000,
+  "n_filtered": 998,
+  "top_class": 1,
+  "source": "pkl",
+  "distribution": {
+    "1": 694,
+    "0": 298,
+    "8": 2,
+    "9": 2,
+    "7": 1,
+    "3": 1
+  },
+  "o1_hist": {
+    "edges": [
+      -0.9999999999999748,
+      -0.9000000000104025,
+      -0.8000000000208302,
+      -0.7000000000312578,
+      -0.6000000000416854,
+      -0.5000000000521132,
+      -0.4000000000625408,
+      -0.30000000007296845,
+      -0.20000000008339613,
+      -0.10000000009382382,
+      -1.0425149632453667e-10,
+      0.09999999988532082,
+      0.19999999987489325,
+      0.29999999986446546,
+      0.3999999998540379,
+      0.4999999998436101,
+      0.5999999998331825,
+      0.699999999822755,
+      0.7999999998123272,
+      0.8999999998018996,
+      0.9999999997914718
+    ],
+    "counts": [
+      660,
+      8,
+      19,
+      4,
+      2,
+      3,
+      1,
+      1,
+      2,
+      1,
+      4,
+      1,
+      2,
+      0,
+      3,
+      4,
+      6,
+      10,
+      9,
+      260
+    ]
+  },
+  "input_probs": [
+    0.9999804496765137,
+    1.767290996212978e-05,
+    2.2347435901792778e-08,
+    6.642330419026621e-08,
+    1.4871076375530534e-12,
+    1.674514070156355e-13,
+    4.622934522170719e-13,
+    1.0495523585429475e-13,
+    1.4711645235365722e-07,
+    1.747916940075811e-06
+  ],
+  "methods": {
+    "counterfactual_pt": {
+      "file": "methods/counterfactual_pt.webp",
+      "probs": [
+        0.03934232518076897,
+        0.007379974238574505,
+        7.004694424495028e-08,
+        2.1614109755319078e-06,
+        9.820140534078092e-11,
+        9.128684787251817e-12,
+        4.797133801304199e-10,
+        4.056274066632781e-11,
+        0.0002540973946452141,
+        0.9530214071273804
+      ],
+      "pred_class": 9,
+      "pred_prob": 0.9530214071273804
+    },
+    "cfproto": {
+      "file": "methods/cfproto.webp",
+      "probs": [
+        0.10530941933393478,
+        0.00047426437959074974,
+        7.439482629933991e-08,
+        4.990059778720024e-07,
+        1.409816974273781e-08,
+        1.7073830196889794e-11,
+        6.193837265300317e-08,
+        2.5677671794399615e-12,
+        0.8845095038414001,
+        0.009706122800707817
+      ],
+      "pred_class": 8,
+      "pred_prob": 0.8845095038414001
+    },
+    "cfrl": {
+      "file": "methods/cfrl.webp",
+      "probs": [
+        5.524149829249942e-15,
+        4.434431608805328e-14,
+        1.3257332244842772e-18,
+        4.964826445607142e-16,
+        9.930467366332628e-17,
+        1.217160537169318e-17,
+        1.0816543820834582e-14,
+        9.429974497584589e-21,
+        1.0,
+        7.749335027840143e-12
+      ],
+      "pred_class": 8,
+      "pred_prob": 1.0
+    },
+    "leapfactual": {
+      "file": "methods/leapfactual.webp",
+      "probs": [
+        0.4269944429397583,
+        3.0930343200452626e-05,
+        7.481235075879056e-11,
+        3.342015830742895e-10,
+        5.52391661301499e-08,
+        5.660274766255968e-12,
+        4.865464031666988e-09,
+        5.357078496082135e-12,
+        0.07312256097793579,
+        0.4998520016670227
+      ],
+      "pred_class": 9,
+      "pred_prob": 0.4998520016670227
+    },
+    "leapfactual_r": {
+      "file": "methods/leapfactual_r.webp",
+      "probs": [
+        0.9911627173423767,
+        6.129075131866557e-07,
+        7.77008492269804e-12,
+        2.0071464022081154e-12,
+        1.9147030627664208e-08,
+        8.938541333697921e-15,
+        4.836745153696809e-12,
+        1.8038116844382862e-13,
+        0.008227018639445305,
+        0.0006095023127272725
+      ],
+      "pred_class": 0,
+      "pred_prob": 0.9911627173423767
+    },
+    "graco_base_o2": {
+      "file": "methods/graco_base_o2.webp",
+      "pred_class": 1,
+      "pred_prob": 0.6564001441001892,
+      "o1": -0.31339511275291443,
+      "o2": 9.0,
+      "o3": 2.3984999656677246,
+      "probs": [
+        0.3402981758117676,
+        0.6564001441001892,
+        2.5977280770916877e-08,
+        1.3223609585111262e-06,
+        4.254951859600231e-12,
+        1.2156747830616155e-11,
+        4.661031005603888e-10,
+        2.8695819592056138e-12,
+        1.1575176017686317e-07,
+        0.003300257958471775
+      ]
+    },
+    "graco_base_o3": {
+      "file": "methods/graco_base_o3.webp",
+      "pred_class": 1,
+      "pred_prob": 0.8189963102340698,
+      "o1": -0.636788010597229,
+      "o2": 15.0,
+      "o3": 1.7641438245773315,
+      "probs": [
+        0.1798115074634552,
+        0.8189963102340698,
+        1.2630511037059478e-07,
+        2.364960892009549e-06,
+        8.406273940830822e-12,
+        1.2803742441280797e-11,
+        2.3488344602640154e-09,
+        4.805214819797454e-12,
+        3.412661726542865e-07,
+        0.0011893579503521323
+      ]
+    },
+    "graco50": {
+      "file": "methods/graco50.webp",
+      "pred_class": 1,
+      "pred_prob": 0.6564001441001892,
+      "o1": -0.31339511275291443,
+      "o2": 9.0,
+      "o3": 2.3984999656677246,
+      "probs": [
+        0.3402981758117676,
+        0.6564001441001892,
+        2.5977280770916877e-08,
+        1.3223609585111262e-06,
+        4.254951859600231e-12,
+        1.2156747830616155e-11,
+        4.661031005603888e-10,
+        2.8695819592056138e-12,
+        1.1575176017686317e-07,
+        0.003300257958471775
+      ]
+    }
+  },
+  "population": [
+    {
+      "id": 0,
+      "file": "population/00.webp",
+      "pred_class": 1,
+      "pred_prob": 1.0,
+      "o1": -0.9999999999999748,
+      "o2": 1119.0,
+      "o3": 21.364133834838867,
+      "phenotype": "Shape-X-7-Y-13-Path-5:3,5:2,5:2,2:10,5:0-Fill-True-Change-N-79.99__Shape-X-10-Y-29-Path-5:6,5:2,5:2-Fill-True-Change-N-98.96_X-13-Y-29-Path-2:2,5:10,5:1,5:2,5:0,3:0,5:0-Fill-True-Change-N-95.99_X-21-Y-13-Path-5:9,7:2,5:2,5:0,5:0-Fill-False-Change-P-99.79_X-5-Y-5-Path-5:2,2:6-Fill-False-Change-N-98.51_X-13-Y-21-Path-5:10,7:6,5:5,5:0,5:0-Fill-True-Change-N-56.59__Shape-X-10-Y-29-Path-6:10,5:10,4:0,5:0,5:0,5:0,5:0-Fill-False-Change-N-79.38_X-29-Y-7-Path-1:2,5:7,5:2,6:0,5:0-Fill-True-Change-N-57.15__Shape-X-10-Y-10-Path-5:6,5:2,5:2,7:0,7:0-Fill-True-Change-N-99.99_X-13-Y-13-Path-5:6,5:4,5:1,5:2,5:0-Fill-True-Change-N-97.97_X-21-Y-5-Path-7:5,5:0,5:0,6:0,5:0,5:0,2:8-Fill-True-Change-N-22.58_X-21-Y-10-Path-5:9,5:1,5:0-Fill-False-Change-P-79.85_X-5-Y-21-Path-5:1,5:3-Fill-True-Change-N-85.97_X-13-Y-21-Path-5:10,5:2-Fill-False-Change-N-15.28_X-7-Y-22-Path-5:4,5:3-Fill-True-Change-N-09.19_X-21-Y-10-Path-5:10,5:0,2:1,5:1,5:0-Fill-True-Change-N-87.95_X-17-Y-5-Path-2:10,5:8,5:6,5:1,5:0,6:0,3:2-Fill-False-Change-N-27.51__Shape-X-5-Y-13-Path-5:3,3:2,5:0,5:0,5:0,5:0,5:0-Fill-False-Change-P-95.97_X-13-Y-13-Path-5:2,5:8-Fill-True-Change-N-60.83_X-21-Y-3-Path-5:1,5:2-Fill-False-Change-N-69.19_X-5-Y-21-Path-5:1,5:2-Fill-True-Change-N-94.92_X-18-Y-16-Path-5:1,6:2,2:7,4:4,5:3,5:5,5:2-Fill-True-Change-P-92.58"
+    },
+    {
+      "id": 1,
+      "file": "population/01.webp",
+      "pred_class": 0,
+      "pred_prob": 1.0,
+      "o1": 0.999999996341471,
+      "o2": 60.0,
+      "o3": 5.7945098876953125,
+      "phenotype": "Shape-X-7-Y-13-Path-0:6,5:9,5:2,5:2,5:0-Fill-False-Change-N-85.98"
+    },
+    {
+      "id": 2,
+      "file": "population/02.webp",
+      "pred_class": 8,
+      "pred_prob": 0.9778110980987549,
+      "o1": -0.959751321002841,
+      "o2": 399.0,
+      "o3": 7.7874298095703125,
+      "phenotype": "Shape-X-21-Y-10-Path-5:10,4:10,5:0,5:0,5:0-Fill-False-Change-N-05.92_X-7-Y-21-Path-5:3,5:2-Fill-True-Change-N-91.99_X-29-Y-17-Path-2:2,5:6,5:9,5:3,5:1,5:0,2:6-Fill-True-Change-P-99.79_X-13-Y-21-Path-5:8,5:5-Fill-False-Change-N-94.59_X-5-Y-29-Path-2:2,2:0-Fill-False-Change-P-59.59"
+    },
+    {
+      "id": 3,
+      "file": "population/03.webp",
+      "pred_class": 9,
+      "pred_prob": 0.9480053186416626,
+      "o1": -0.9001185856759548,
+      "o2": 63.0,
+      "o3": 6.928158760070801,
+      "phenotype": "Shape-X-7-Y-21-Path-5:2,5:1,2:6,5:2,5:2-Fill-True-Change-N-98.39"
+    },
+    {
+      "id": 4,
+      "file": "population/04.webp",
+      "pred_class": 7,
+      "pred_prob": 0.9127656817436218,
+      "o1": -0.8258662447333336,
+      "o2": 768.0,
+      "o3": 19.249155044555664,
+      "phenotype": "Shape-X-21-Y-18-Path-5:10,5:3,5:1,5:2,5:2-Fill-True-Change-N-09.95_X-4-Y-29-Path-3:1,5:1,7:10,6:6,4:10-Fill-True-Change-N-91.09_X-10-Y-4-Path-5:4,5:0,5:0,2:8,0:6-Fill-True-Change-N-89.56_X-10-Y-13-Path-7:6,1:10,5:1-Fill-False-Change-N-99.89_X-21-Y-21-Path-2:10,5:1,5:6,5:9,7:10,2:8,5:10-Fill-False-Change-N-90.95"
+    },
+    {
+      "id": 5,
+      "file": "population/05.webp",
+      "pred_class": 3,
+      "pred_prob": 0.9602464437484741,
+      "o1": -0.9330840855836868,
+      "o2": 980.0,
+      "o3": 21.446481704711914,
+      "phenotype": "Shape-X-21-Y-27-Path-7:10,5:6,5:6,5:4,5:1-Fill-True-Change-N-99.99"
+    },
+    {
+      "id": 6,
+      "file": "population/06.webp",
+      "pred_class": 1,
+      "pred_prob": 1.0,
+      "o1": -0.9999999814744562,
+      "o2": 24.0,
+      "o3": 3.1468398571014404,
+      "phenotype": "Shape-X-4-Y-18-Path-1:8,1:4,5:8-Fill-True-Change-N-49.92_X-29-Y-13-Path-5:2,5:2,1:4-Fill-True-Change-P-99.28"
+    },
+    {
+      "id": 7,
+      "file": "population/07.webp",
+      "pred_class": 0,
+      "pred_prob": 1.0,
+      "o1": 0.9999999912607951,
+      "o2": 21.0,
+      "o3": 3.5130860805511475,
+      "phenotype": "Shape-X-7-Y-8-Path-5:5,5:2,5:0-Fill-True-Change-N-99.59"
+    },
+    {
+      "id": 8,
+      "file": "population/08.webp",
+      "pred_class": 8,
+      "pred_prob": 0.8300809860229492,
+      "o1": -0.8297218662919477,
+      "o2": 1604.0,
+      "o3": 25.299009323120117,
+      "phenotype": "Shape-X-29-Y-21-Path-1:2,7:0,5:6,5:9,5:6,5:1,5:1-Fill-True-Change-N-95.50_X-21-Y-10-Path-5:2,5:6,7:1,7:1,2:10,5:10,5:0-Fill-True-Change-N-99.59_X-13-Y-29-Path-1:2,7:6,5:10,5:9,5:2-Fill-True-Change-N-95.99_X-21-Y-29-Path-5:9,5:4,2:6,5:3,5:2,5:3,5:0-Fill-False-Change-N-99.29_X-20-Y-14-Path-7:6,5:3,5:5-Fill-True-Change-P-59.97_X-29-Y-21-Path-5:10,5:8-Fill-True-Change-N-58.99_X-21-Y-24-Path-5:10,5:2,5:7,0:8,5:5,5:0,5:0-Fill-False-Change-N-12.90_X-21-Y-13-Path-5:5,5:6,2:6,5:3-Fill-False-Change-N-98.99_X-29-Y-10-Path-7:2,5:6,2:6,5:3,5:2-Fill-False-Change-P-97.18_X-13-Y-13-Path-5:2,5:8,5:3,3:0,7:0,2:10,5:0-Fill-False-Change-N-99.27_X-13-Y-5-Path-1:10,7:6,5:7,5:1,5:1-Fill-True-Change-N-87.98_X-21-Y-5-Path-5:5,1:8,5:4,5:2,2:8-Fill-True-Change-N-17.77_X-10-Y-10-Path-5:6,5:2,5:2,5:0,5:0,5:0,5:0-Fill-True-Change-N-99.89_X-21-Y-21-Path-5:6,5:1-Fill-False-Change-N-78.18_X-23-Y-13-Path-5:10,2:10,7:10,5:1-Fill-False-Change-N-87.59"
+    },
+    {
+      "id": 9,
+      "file": "population/09.webp",
+      "pred_class": 9,
+      "pred_prob": 0.7810435891151428,
+      "o1": -0.5620944201946259,
+      "o2": 221.0,
+      "o3": 8.731172561645508,
+      "phenotype": "Shape-X-7-Y-21-Path-5:3,2:9,5:2,7:10,2:10-Fill-True-Change-N-18.96"
+    },
+    {
+      "id": 10,
+      "file": "population/10.webp",
+      "pred_class": 1,
+      "pred_prob": 1.0,
+      "o1": -0.9999999761055047,
+      "o2": 30.0,
+      "o3": 4.753246307373047,
+      "phenotype": "Shape-X-4-Y-18-Path-1:8,1:4,5:8-Fill-True-Change-N-49.92_X-29-Y-13-Path-5:2,5:2,5:2-Fill-True-Change-N-91.39"
+    },
+    {
+      "id": 11,
+      "file": "population/11.webp",
+      "pred_class": 0,
+      "pred_prob": 1.0,
+      "o1": 0.9999999997914718,
+      "o2": 96.0,
+      "o3": 5.051927089691162,
+      "phenotype": "Shape-X-7-Y-29-Path-7:10,2:6,5:6,5:6,5:1,5:2,5:1-Fill-False-Change-N-89.95"
+    },
+    {
+      "id": 12,
+      "file": "population/12.webp",
+      "pred_class": 1,
+      "pred_prob": 1.0,
+      "o1": -0.9999999993227237,
+      "o2": 120.0,
+      "o3": 3.538240432739258,
+      "phenotype": "Shape-X-4-Y-18-Path-1:8,1:4,5:8-Fill-True-Change-N-49.92_X-29-Y-13-Path-5:2,5:2,7:4-Fill-True-Change-P-81.39"
+    },
+    {
+      "id": 13,
+      "file": "population/13.webp",
+      "pred_class": 0,
+      "pred_prob": 1.0,
+      "o1": 0.9999999644229653,
+      "o2": 63.0,
+      "o3": 5.687485694885254,
+      "phenotype": "Shape-X-21-Y-22-Path-5:10,5:10,5:1,5:0,5:0-Fill-True-Change-N-57.55"
+    },
+    {
+      "id": 14,
+      "file": "population/14.webp",
+      "pred_class": 1,
+      "pred_prob": 1.0,
+      "o1": -0.9999999880399901,
+      "o2": 60.0,
+      "o3": 5.87183141708374,
+      "phenotype": "Shape-X-7-Y-21-Path-5:3,5:2-Fill-True-Change-N-11.89_X-29-Y-13-Path-5:2,1:3,7:1,7:0,5:10-Fill-False-Change-N-91.99"
+    },
+    {
+      "id": 15,
+      "file": "population/15.webp",
+      "pred_class": 0,
+      "pred_prob": 1.0,
+      "o1": 0.9999999655393879,
+      "o2": 48.0,
+      "o3": 5.337826251983643,
+      "phenotype": "Shape-X-7-Y-7-Path-2:10,5:3,5:2-Fill-False-Change-N-99.58"
+    },
+    {
+      "id": 16,
+      "file": "population/16.webp",
+      "pred_class": 1,
+      "pred_prob": 1.0,
+      "o1": -0.9999999595820803,
+      "o2": 300.0,
+      "o3": 10.643753051757812,
+      "phenotype": "Shape-X-7-Y-21-Path-5:3,5:2-Fill-True-Change-N-95.99__Shape-X-10-Y-18-Path-5:10,5:0-Fill-True-Change-N-85.95_X-13-Y-29-Path-2:1,5:10,5:1,5:2,5:0,5:0,5:0-Fill-False-Change-N-59.55_X-10-Y-13-Path-5:6,4:4,5:0,5:0,5:0,5:0,5:0-Fill-False-Change-P-99.78_X-7-Y-18-Path-5:3,5:4,5:0,5:0,2:10,5:0,1:10-Fill-False-Change-N-72.59__Shape-X-5-Y-13-Path-5:3,5:2,5:0,5:0,5:0-Fill-True-Change-N-49.99_X-7-Y-21-Path-5:6,5:1,5:0-Fill-True-Change-N-25.95_X-21-Y-21-Path-5:6,2:8,5:10,5:1,1:9,7:3,2:8-Fill-False-Change-N-79.99_X-13-Y-21-Path-5:8,5:3,5:2,4:0,5:0,5:0,5:0-Fill-False-Change-N-98.55"
+    },
+    {
+      "id": 17,
+      "file": "population/17.webp",
+      "pred_class": 0,
+      "pred_prob": 0.9999998807907104,
+      "o1": 0.9999997784028523,
+      "o2": 15.0,
+      "o3": 3.146568536758423,
+      "phenotype": "Shape-X-7-Y-5-Path-5:5,5:0,5:0,5:0,5:0,5:0,5:0-Fill-True-Change-N-91.89"
+    },
+    {
+      "id": 18,
+      "file": "population/18.webp",
+      "pred_class": 1,
+      "pred_prob": 1.0,
+      "o1": -0.9999999814744562,
+      "o2": 24.0,
+      "o3": 3.1468398571014404,
+      "phenotype": "Shape-X-4-Y-18-Path-1:8,1:4,5:8-Fill-True-Change-N-49.92_X-29-Y-13-Path-5:2,5:2,1:4-Fill-True-Change-P-81.93"
+    },
+    {
+      "id": 19,
+      "file": "population/19.webp",
+      "pred_class": 0,
+      "pred_prob": 0.9999998807907104,
+      "o1": 0.9999998094688038,
+      "o2": 212.0,
+      "o3": 9.826793670654297,
+      "phenotype": "Shape-X-7-Y-21-Path-5:2,1:4,7:10,2:10,7:8-Fill-True-Change-N-71.55"
+    },
+    {
+      "id": 20,
+      "file": "population/20.webp",
+      "pred_class": 1,
+      "pred_prob": 0.9999998807907104,
+      "o1": -0.9999998239624048,
+      "o2": 95.0,
+      "o3": 5.806473255157471,
+      "phenotype": "Shape-X-7-Y-13-Path-4:3,1:10,2:6,5:10,5:2-Fill-False-Change-N-85.98"
+    },
+    {
+      "id": 21,
+      "file": "population/21.webp",
+      "pred_class": 0,
+      "pred_prob": 0.9999998807907104,
+      "o1": 0.9999998175527196,
+      "o2": 321.0,
+      "o3": 10.060382843017578,
+      "phenotype": "Shape-X-29-Y-29-Path-5:10,2:10,5:10,2:6,5:7-Fill-True-Change-N-97.59"
+    },
+    {
+      "id": 22,
+      "file": "population/22.webp",
+      "pred_class": 1,
+      "pred_prob": 0.9999986886978149,
+      "o1": -0.9999980078898147,
+      "o2": 143.0,
+      "o3": 6.003176689147949,
+      "phenotype": "Shape-X-4-Y-18-Path-1:8,1:4,5:8-Fill-True-Change-N-48.19_X-13-Y-13-Path-5:4,1:10,2:9,5:10,1:10-Fill-False-Change-N-13.70_X-18-Y-5-Path-5:5,3:8-Fill-False-Change-P-79.89"
+    },
+    {
+      "id": 23,
+      "file": "population/23.webp",
+      "pred_class": 0,
+      "pred_prob": 0.9999998807907104,
+      "o1": 0.9999997292560892,
+      "o2": 87.0,
+      "o3": 6.2038044929504395,
+      "phenotype": "Shape-X-29-Y-29-Path-5:6,5:10,5:10,5:1,5:2-Fill-True-Change-N-98.59"
+    },
+    {
+      "id": 24,
+      "file": "population/24.webp",
+      "pred_class": 1,
+      "pred_prob": 0.9999985694885254,
+      "o1": -0.9999974956964479,
+      "o2": 45.0,
+      "o3": 3.600175619125366,
+      "phenotype": "Shape-X-7-Y-21-Path-5:3,5:2-Fill-True-Change-N-99.19_X-29-Y-9-Path-5:4,7:5,6:0,5:0,5:0-Fill-False-Change-P-99.99"
+    },
+    {
+      "id": 25,
+      "file": "population/25.webp",
+      "pred_class": 0,
+      "pred_prob": 0.9999998807907104,
+      "o1": 0.9999997121329187,
+      "o2": 408.0,
+      "o3": 6.1884307861328125,
+      "phenotype": "Shape-X-10-Y-13-Path-5:10,2:10,5:0,0:10,5:6-Fill-False-Change-P-95.57_X-21-Y-29-Path-5:6,4:10,2:6,5:4,5:1,5:0,5:0-Fill-True-Change-N-75.55"
+    },
+    {
+      "id": 26,
+      "file": "population/26.webp",
+      "pred_class": 1,
+      "pred_prob": 0.9999984502792358,
+      "o1": -0.9999971978356825,
+      "o2": 42.0,
+      "o3": 5.902170658111572,
+      "phenotype": "Shape-X-7-Y-21-Path-5:6,2:7-Fill-False-Change-N-51.31"
+    },
+    {
+      "id": 27,
+      "file": "population/27.webp",
+      "pred_class": 0,
+      "pred_prob": 0.9999997615814209,
+      "o1": 0.9999994960804486,
+      "o2": 1610.0,
+      "o3": 25.19961929321289,
+      "phenotype": "Shape-X-13-Y-29-Path-5:6,7:10,2:6,5:6,5:10-Fill-True-Change-N-99.91_X-29-Y-13-Path-5:8,5:4,7:1,2:10,5:4-Fill-False-Change-N-98.59_X-21-Y-29-Path-5:2,5:3,5:6-Fill-True-Change-N-99.99_X-5-Y-13-Path-2:10,5:1,5:3,5:1,0:6,5:1,5:5-Fill-True-Change-P-59.89_X-21-Y-26-Path-0:6,5:10,5:6,5:10,5:0,5:0,5:0-Fill-True-Change-N-98.59_X-29-Y-29-Path-1:2,5:10,5:10,5:6,5:1-Fill-False-Change-P-99.98_X-13-Y-4-Path-2:10,5:9,5:2,5:1,7:2-Fill-True-Change-N-99.85_X-10-Y-21-Path-2:8,5:9,7:10,2:8,5:10-Fill-False-Change-N-99.95_X-21-Y-29-Path-5:10,5:10,5:1-Fill-True-Change-N-51.79_X-29-Y-21-Path-2:6,7:2,2:4,5:10,5:10,5:6,2:6-Fill-True-Change-N-13.75"
+    },
+    {
+      "id": 28,
+      "file": "population/28.webp",
+      "pred_class": 1,
+      "pred_prob": 0.9999977350234985,
+      "o1": -0.999997734275931,
+      "o2": 645.0,
+      "o3": 16.325382232666016,
+      "phenotype": "Shape-X-22-Y-13-Path-5:6,6:6,5:1,5:0,5:0-Fill-True-Change-P-95.97_X-21-Y-17-Path-2:2,2:10,2:2,5:9,5:6-Fill-False-Change-N-99.99_X-29-Y-13-Path-5:10,5:1,5:2-Fill-True-Change-N-98.99_X-21-Y-29-Path-5:9,5:6,7:9,5:5,5:0,7:0,2:6-Fill-False-Change-N-59.55_X-21-Y-18-Path-1:10,5:6,5:10,5:9,5:2-Fill-True-Change-N-97.79_X-21-Y-13-Path-7:10,2:6,5:7,5:2-Fill-False-Change-N-75.79_X-29-Y-18-Path-5:6,5:9,7:3,0:10,5:0-Fill-False-Change-N-97.59_X-13-Y-21-Path-7:9,5:8,2:10,7:6-Fill-False-Change-P-59.74_X-7-Y-21-Path-5:3,5:2-Fill-False-Change-N-99.49_X-5-Y-2-Path-5:2,5:0,5:0,2:10,5:1-Fill-False-Change-N-79.57_X-21-Y-18-Path-5:7,5:10,1:8-Fill-False-Change-N-89.99"
+    },
+    {
+      "id": 29,
+      "file": "population/29.webp",
+      "pred_class": 0,
+      "pred_prob": 0.9999997615814209,
+      "o1": 0.999999541016976,
+      "o2": 81.0,
+      "o3": 5.982321739196777,
+      "phenotype": "Shape-X-7-Y-21-Path-5:1,7:10-Fill-True-Change-N-99.85"
+    },
+    {
+      "id": 30,
+      "file": "population/30.webp",
+      "pred_class": 1,
+      "pred_prob": 0.9999909400939941,
+      "o1": -0.999987737029187,
+      "o2": 965.0,
+      "o3": 21.7152099609375,
+      "phenotype": "Shape-X-7-Y-21-Path-5:3,5:2-Fill-True-Change-N-55.59_X-29-Y-4-Path-5:3,7:1,5:0,5:0,5:0,3:8,5:6-Fill-True-Change-N-94.99_X-5-Y-10-Path-5:1,5:2,5:2,5:0,5:0-Fill-False-Change-N-98.95_X-21-Y-13-Path-5:6,5:3,5:2,5:2,5:0,5:0,5:0-Fill-True-Change-N-95.56_X-21-Y-10-Path-5:6,5:2,5:2,5:0,2:10-Fill-False-Change-N-86.58_X-21-Y-29-Path-7:10,2:10,5:9,5:10,5:8,5:2,5:0-Fill-False-Change-N-98.51_X-13-Y-21-Path-5:6,5:3,5:2-Fill-False-Change-N-59.49_X-21-Y-21-Path-5:6,5:9,5:4-Fill-False-Change-P-59.25_X-7-Y-13-Path-5:6,5:1,2:8,5:0,5:0,1:9,7:3-Fill-True-Change-N-91.79_X-21-Y-26-Path-5:10,5:8,5:2,5:1,4:0-Fill-False-Change-P-55.79_X-7-Y-21-Path-5:2,5:4-Fill-True-Change-N-98.85"
+    },
+    {
+      "id": 31,
+      "file": "population/31.webp",
+      "pred_class": 0,
+      "pred_prob": 0.9999997615814209,
+      "o1": 0.9999996897886447,
+      "o2": 21.0,
+      "o3": 3.5908405780792236,
+      "phenotype": "Shape-X-7-Y-10-Path-5:3,5:2,1:1,1:3,5:5-Fill-False-Change-N-85.97"
+    },
+    {
+      "id": 32,
+      "file": "population/32.webp",
+      "pred_class": 1,
+      "pred_prob": 0.9999889731407166,
+      "o1": -0.9999796422671352,
+      "o2": 57.0,
+      "o3": 6.021464824676514,
+      "phenotype": "Shape-X-7-Y-21-Path-5:4,5:2,1:6,5:5,2:10,5:2,5:0-Fill-False-Change-N-79.59"
+    },
+    {
+      "id": 33,
+      "file": "population/33.webp",
+      "pred_class": 0,
+      "pred_prob": 0.9999997615814209,
+      "o1": 0.9999995235232007,
+      "o2": 39.0,
+      "o3": 3.5329127311706543,
+      "phenotype": "Shape-X-13-Y-21-Path-5:10,5:3-Fill-True-Change-N-95.50"
+    },
+    {
+      "id": 34,
+      "file": "population/34.webp",
+      "pred_class": 1,
+      "pred_prob": 0.9999858140945435,
+      "o1": -0.9999738758669992,
+      "o2": 1713.0,
+      "o3": 28.548038482666016,
+      "phenotype": "Shape-X-21-Y-29-Path-5:6,5:6,5:1,5:3,5:5-Fill-False-Change-P-92.19_X-13-Y-10-Path-2:10,5:6,5:6-Fill-True-Change-N-99.59_X-29-Y-29-Path-2:2,5:10,5:6,5:8,5:1,5:2,5:1-Fill-True-Change-N-99.59_X-10-Y-21-Path-5:10,5:0-Fill-True-Change-N-89.55_X-10-Y-29-Path-5:6,5:4,7:10,4:6,5:1,2:6,5:3-Fill-True-Change-P-59.61_X-29-Y-4-Path-5:4,5:0,7:0,0:4,5:0-Fill-False-Change-P-94.99_X-5-Y-16-Path-5:2,2:6,5:1,2:8,5:1-Fill-False-Change-N-87.59_X-29-Y-13-Path-3:6,5:10,5:8,5:1,5:0,5:0,5:0-Fill-True-Change-N-79.85_X-21-Y-10-Path-7:10,2:6,5:6,5:0,5:0-Fill-True-Change-N-99.13_X-29-Y-21-Path-5:5,5:9,5:6-Fill-True-Change-N-99.98_X-3-Y-13-Path-5:3,5:0,5:0,2:6,5:0,2:6,5:0-Fill-False-Change-N-78.53_X-7-Y-21-Path-5:2,5:4-Fill-True-Change-N-79.99"
+    },
+    {
+      "id": 35,
+      "file": "population/35.webp",
+      "pred_class": 0,
+      "pred_prob": 0.9999997615814209,
+      "o1": 0.9999996692713395,
+      "o2": 24.0,
+      "o3": 3.746866464614868,
+      "phenotype": "Shape-X-7-Y-10-Path-5:3,5:2,5:2,5:0,5:0-Fill-False-Change-N-89.91"
+    },
+    {
+      "id": 36,
+      "file": "population/36.webp",
+      "pred_class": 1,
+      "pred_prob": 0.9999459981918335,
+      "o1": -0.9999453240841945,
+      "o2": 291.0,
+      "o3": 9.299609184265137,
+      "phenotype": "Shape-X-20-Y-7-Path-2:10,7:10,2:10,5:10,5:3,5:4,5:0-Fill-True-Change-N-10.93"
+    },
+    {
+      "id": 37,
+      "file": "population/37.webp",
+      "pred_class": 0,
+      "pred_prob": 0.9999997615814209,
+      "o1": 0.999999541016976,
+      "o2": 81.0,
+      "o3": 5.982321739196777,
+      "phenotype": "Shape-X-7-Y-21-Path-5:1,7:10-Fill-True-Change-N-91.79"
+    },
+    {
+      "id": 38,
+      "file": "population/38.webp",
+      "pred_class": 1,
+      "pred_prob": 0.9999092817306519,
+      "o1": -0.9998214830848156,
+      "o2": 1694.0,
+      "o3": 27.21785545349121,
+      "phenotype": "Shape-X-7-Y-21-Path-5:3,5:2-Fill-True-Change-N-83.98__Shape-X-29-Y-21-Path-5:6,5:9,5:6,0:10,5:0-Fill-True-Change-N-58.79_X-21-Y-26-Path-5:10,5:6,5:1,5:2,5:2-Fill-False-Change-N-85.99_X-13-Y-21-Path-3:6,2:4,5:3,2:2,5:2-Fill-False-Change-N-78.55_X-5-Y-29-Path-5:2,1:2,5:5,5:0,5:0-Fill-False-Change-N-05.98__Shape-X-13-Y-21-Path-5:10,5:1,7:10,5:0,2:10,5:6,5:3-Fill-False-Change-N-49.59_X-21-Y-21-Path-7:10,5:10,5:1-Fill-False-Change-P-97.89_X-7-Y-21-Path-5:3,5:3-Fill-True-Change-N-98.95_X-13-Y-21-Path-5:10,2:10,5:2,2:10,5:1-Fill-True-Change-N-99.49_X-13-Y-21-Path-5:10,7:8,6:3-Fill-False-Change-N-96.99_X-5-Y-14-Path-2:10,5:5,5:0,6:7,5:0,5:0,1:8-Fill-False-Change-N-89.57_X-10-Y-15-Path-2:10,2:2,1:2,5:10,5:2,2:10,2:2-Fill-False-Change-N-71.69_X-31-Y-21-Path-5:2,5:6-Fill-False-Change-P-19.79_X-5-Y-13-Path-5:5,5:0,5:0-Fill-False-Change-N-99.89_X-5-Y-17-Path-1:10,3:3-Fill-False-Change-N-97.88_X-21-Y-10-Path-5:8,5:2,5:0-Fill-False-Change-N-79.78_X-21-Y-10-Path-1:10,2:10,7:0-Fill-False-Change-N-79.95_X-10-Y-21-Path-5:8,5:2,5:0-Fill-False-Change-P-70.97_X-13-Y-21-Path-5:8,5:3,7:10-Fill-False-Change-N-57.96_X-17-Y-10-Path-5:3,5:1,2:8,5:9,5:2-Fill-False-Change-N-97.19_X-5-Y-5-Path-5:4,5:1,5:0,2:8,5:0-Fill-True-Change-N-87.98__Shape-X-5-Y-21-Path-5:1,5:2-Fill-True-Change-N-79.89__Shape-X-5-Y-13-Path-5:3,1:8,5:4-Fill-True-Change-N-71.81_X-14-Y-27-Path-6:10,5:10,5:3-Fill-True-Change-N-79.95_X-5-Y-17-Path-5:3,1:8,4:10,5:0,2:5-Fill-True-Change-N-76.93_X-29-Y-17-Path-5:10,1:6,6:5,5:6-Fill-False-Change-N-97.89_X-29-Y-13-Path-5:10,5:3,1:8-Fill-False-Change-N-77.37_X-17-Y-5-Path-2:2,5:7,5:0,5:0,1:2,1:5-Fill-False-Change-N-37.20"
+    },
+    {
+      "id": 39,
+      "file": "population/39.webp",
+      "pred_class": 0,
+      "pred_prob": 0.9999997615814209,
+      "o1": 0.9999996443732684,
+      "o2": 18.0,
+      "o3": 3.2891969680786133,
+      "phenotype": "Shape-X-8-Y-5-Path-5:5,5:0,6:0,5:0,5:0,5:0,5:0-Fill-False-Change-N-59.45"
+    },
+    {
+      "id": 40,
+      "file": "population/40.webp",
+      "pred_class": 1,
+      "pred_prob": 0.9998923540115356,
+      "o1": -0.9998614737742173,
+      "o2": 21.0,
+      "o3": 4.066953659057617,
+      "phenotype": "Shape-X-7-Y-21-Path-5:4,1:6-Fill-False-Change-N-95.51"
+    },
+    {
+      "id": 41,
+      "file": "population/41.webp",
+      "pred_class": 0,
+      "pred_prob": 0.9999997615814209,
+      "o1": 0.999999541016976,
+      "o2": 81.0,
+      "o3": 5.982321739196777,
+      "phenotype": "Shape-X-7-Y-21-Path-5:1,7:10-Fill-True-Change-N-69.75"
+    },
+    {
+      "id": 42,
+      "file": "population/42.webp",
+      "pred_class": 1,
+      "pred_prob": 0.9998903870582581,
+      "o1": -0.9998771472392036,
+      "o2": 1133.0,
+      "o3": 23.001083374023438,
+      "phenotype": "Shape-X-13-Y-21-Path-2:10,5:10,0:10-Fill-False-Change-P-95.98_X-29-Y-13-Path-5:10,5:1,7:2,2:6,5:1-Fill-True-Change-N-99.89_X-7-Y-21-Path-5:4,5:1,1:6,5:3-Fill-True-Change-N-95.99_X-21-Y-10-Path-5:10,2:6,5:1,5:5,5:0-Fill-True-Change-N-59.35_X-21-Y-21-Path-4:6,5:9,5:6,5:0,2:6,5:0,5:0-Fill-False-Change-N-59.99_X-10-Y-7-Path-2:9,5:10,5:0,2:8,5:0-Fill-False-Change-N-71.97_X-9-Y-29-Path-5:1,5:6,5:2-Fill-True-Change-N-77.59_X-29-Y-13-Path-7:2,2:6,5:10,5:4,5:3,5:0-Fill-True-Change-N-85.99_X-21-Y-21-Path-7:10,2:8,5:10,2:6,5:9-Fill-False-Change-N-89.97_X-7-Y-21-Path-5:5,5:2,4:0,5:0,5:0-Fill-False-Change-P-95.98_X-13-Y-21-Path-5:8,5:5-Fill-False-Change-N-59.97_X-7-Y-21-Path-5:3,5:2-Fill-True-Change-N-91.99_X-13-Y-10-Path-3:6,5:6,5:1,5:0,2:6-Fill-True-Change-P-39.91_X-17-Y-5-Path-5:2,5:2-Fill-True-Change-N-92.81_X-17-Y-13-Path-5:2,1:8,0:1-Fill-False-Change-N-85.95_X-17-Y-10-Path-5:9,5:1,5:0-Fill-False-Change-N-97.98_X-15-Y-5-Path-5:4,5:1-Fill-False-Change-P-78.95_X-24-Y-5-Path-2:10,5:1,5:1,1:3,5:9,1:6,5:10-Fill-True-Change-N-79.71_X-13-Y-18-Path-5:9,5:2,2:8,1:8,5:10-Fill-False-Change-N-98.77_X-5-Y-10-Path-3:3,5:1,5:1,3:0,7:9-Fill-False-Change-N-89.87_X-10-Y-5-Path-5:3,5:2-Fill-False-Change-N-89.09_X-13-Y-5-Path-5:1,5:2,3:2-Fill-False-Change-N-18.11_X-27-Y-5-Path-5:5,5:0-Fill-True-Change-N-78.99"
+    },
+    {
+      "id": 43,
+      "file": "population/43.webp",
+      "pred_class": 0,
+      "pred_prob": 0.9999997615814209,
+      "o1": 0.9999996416805743,
+      "o2": 18.0,
+      "o3": 3.358393430709839,
+      "phenotype": "Shape-X-7-Y-10-Path-5:3,5:2,5:1-Fill-True-Change-N-99.53"
+    },
+    {
+      "id": 44,
+      "file": "population/44.webp",
+      "pred_class": 1,
+      "pred_prob": 0.999890148639679,
+      "o1": -0.9997802967773168,
+      "o2": 959.0,
+      "o3": 18.940317153930664,
+      "phenotype": "Shape-X-21-Y-10-Path-5:6,5:2,5:2,5:0,5:0-Fill-True-Change-P-97.59_X-29-Y-21-Path-5:6,2:6,5:3,5:10,5:3-Fill-False-Change-P-99.99_X-13-Y-13-Path-5:9,5:2,5:2-Fill-True-Change-N-59.29_X-21-Y-10-Path-5:2,5:6,5:2,7:0,5:0-Fill-True-Change-N-95.55_X-29-Y-5-Path-6:1,5:4,2:10,5:6,5:4-Fill-False-Change-P-59.55_X-29-Y-7-Path-5:1,5:6,5:0,5:0,5:0-Fill-True-Change-N-75.79_X-5-Y-29-Path-5:5,4:0,5:0,5:0,5:0,5:0,5:0-Fill-True-Change-N-93.58_X-21-Y-29-Path-2:2,5:5,5:6,5:8,5:2,5:0,5:0-Fill-True-Change-N-45.89_X-10-Y-13-Path-7:10,2:6,5:8-Fill-True-Change-N-59.89_X-21-Y-13-Path-5:10,5:1,5:2,5:0,5:0,5:0,5:0-Fill-False-Change-P-97.99_X-5-Y-29-Path-5:5,5:0,5:0-Fill-True-Change-N-95.74_X-10-Y-13-Path-5:8,6:2,0:10,6:1,5:2-Fill-True-Change-N-98.95_X-21-Y-10-Path-5:9,5:1,5:0,5:0,4:10,5:0,5:0-Fill-True-Change-N-97.16_X-5-Y-12-Path-2:8,5:5,5:0,0:2,5:2,5:0,5:0-Fill-False-Change-N-97.57_X-29-Y-5-Path-5:4,5:1,5:0,2:10,5:2,2:8,1:6-Fill-False-Change-P-87.98"
+    },
+    {
+      "id": 45,
+      "file": "population/45.webp",
+      "pred_class": 0,
+      "pred_prob": 0.9999997615814209,
+      "o1": 0.999999541016976,
+      "o2": 81.0,
+      "o3": 5.982321739196777,
+      "phenotype": "Shape-X-7-Y-21-Path-5:1,7:10-Fill-True-Change-N-99.99"
+    },
+    {
+      "id": 46,
+      "file": "population/46.webp",
+      "pred_class": 1,
+      "pred_prob": 0.999850332736969,
+      "o1": -0.9997037153952988,
+      "o2": 582.0,
+      "o3": 10.82421875,
+      "phenotype": "Shape-X-21-Y-1-Path-5:1,5:0,5:0-Fill-True-Change-N-65.90_X-29-Y-13-Path-5:10,5:1,5:2,5:0,5:0-Fill-True-Change-N-59.93_X-31-Y-13-Path-7:0,2:8,5:6,5:10,3:6,5:1-Fill-True-Change-P-97.95_X-29-Y-13-Path-5:9,5:2,5:2,5:0,5:0-Fill-False-Change-N-49.95_X-29-Y-29-Path-7:2,0:0,2:2,1:0,1:0-Fill-False-Change-N-37.49_X-10-Y-18-Path-5:4,5:2,5:2-Fill-True-Change-N-92.81_X-17-Y-13-Path-5:2,1:3,5:3-Fill-False-Change-N-93.91_X-13-Y-9-Path-0:1,2:8,2:6-Fill-True-Change-N-75.87_X-10-Y-13-Path-5:10,1:8,5:6-Fill-False-Change-P-73.72_X-10-Y-13-Path-5:9,5:1-Fill-True-Change-N-90.39_X-13-Y-5-Path-5:1,1:8-Fill-False-Change-P-55.79"
+    },
+    {
+      "id": 47,
+      "file": "population/47.webp",
+      "pred_class": 0,
+      "pred_prob": 0.9999996423721313,
+      "o1": 0.9999993230043742,
+      "o2": 246.0,
+      "o3": 10.626723289489746,
+      "phenotype": "Shape-X-21-Y-21-Path-5:6,2:6,5:6,5:7,5:2-Fill-True-Change-N-59.59"
+    },
+    {
+      "id": 48,
+      "file": "population/48.webp",
+      "pred_class": 1,
+      "pred_prob": 0.9998401403427124,
+      "o1": -0.999785353178595,
+      "o2": 21.0,
+      "o3": 3.766425371170044,
+      "phenotype": "Shape-X-7-Y-21-Path-5:3,1:6-Fill-False-Change-N-91.51"
+    },
+    {
+      "id": 49,
+      "file": "population/49.webp",
+      "pred_class": 0,
+      "pred_prob": 0.9999995231628418,
+      "o1": 0.9999990432830828,
+      "o2": 305.0,
+      "o3": 12.328153610229492,
+      "phenotype": "Shape-X-7-Y-21-Path-7:10,0:10-Fill-True-Change-N-55.55"
+    },
+    {
+      "id": 50,
+      "file": "population/50.webp",
+      "pred_class": 1,
+      "pred_prob": 0.9998401403427124,
+      "o1": -0.999785353178595,
+      "o2": 21.0,
+      "o3": 3.766425371170044,
+      "phenotype": "Shape-X-7-Y-21-Path-5:3,1:6-Fill-False-Change-N-91.18"
+    },
+    {
+      "id": 51,
+      "file": "population/51.webp",
+      "pred_class": 0,
+      "pred_prob": 0.9999995231628418,
+      "o1": 0.9999990987134026,
+      "o2": 222.0,
+      "o3": 9.576763153076172,
+      "phenotype": "Shape-X-13-Y-21-Path-5:10,5:1,5:2,1:10,7:10-Fill-True-Change-N-87.99"
+    },
+    {
+      "id": 52,
+      "file": "population/52.webp",
+      "pred_class": 1,
+      "pred_prob": 0.9997228384017944,
+      "o1": -0.9994825527392095,
+      "o2": 126.0,
+      "o3": 8.441579818725586,
+      "phenotype": "Shape-X-29-Y-17-Path-5:10,5:4,5:1,5:1,7:1,6:0,5:0-Fill-True-Change-N-99.59"
+    },
+    {
+      "id": 53,
+      "file": "population/53.webp",
+      "pred_class": 0,
+      "pred_prob": 0.9999992847442627,
+      "o1": 0.9999987095379197,
+      "o2": 15.0,
+      "o3": 2.6986141204833984,
+      "phenotype": "Shape-X-13-Y-5-Path-5:5,5:0,5:0,5:0,7:0-Fill-True-Change-N-99.59"
+    },
+    {
+      "id": 54,
+      "file": "population/54.webp",
+      "pred_class": 1,
+      "pred_prob": 0.9997084140777588,
+      "o1": -0.9996014272765024,
+      "o2": 33.0,
+      "o3": 4.4646220207214355,
+      "phenotype": "Shape-X-7-Y-21-Path-5:2,5:2,5:1,1:10,5:10-Fill-False-Change-N-95.98"
+    },
+    {
+      "id": 55,
+      "file": "population/55.webp",
+      "pred_class": 0,
+      "pred_prob": 0.9999990463256836,
+      "o1": 0.9999982809230232,
+      "o2": 303.0,
+      "o3": 13.52522087097168,
+      "phenotype": "Shape-X-7-Y-13-Path-0:8,5:6,5:3,5:3,5:1-Fill-True-Change-N-59.98"
+    },
+    {
+      "id": 56,
+      "file": "population/56.webp",
+      "pred_class": 1,
+      "pred_prob": 0.9997084140777588,
+      "o1": -0.9996014272765024,
+      "o2": 33.0,
+      "o3": 4.4646220207214355,
+      "phenotype": "Shape-X-7-Y-21-Path-5:3,5:2,1:10,5:6,5:1-Fill-False-Change-N-77.55"
+    },
+    {
+      "id": 57,
+      "file": "population/57.webp",
+      "pred_class": 0,
+      "pred_prob": 0.9999986886978149,
+      "o1": 0.9999976730083517,
+      "o2": 30.0,
+      "o3": 1.3881756067276,
+      "phenotype": "Shape-X-25-Y-29-Path-7:2,1:2,7:2-Fill-True-Change-N-99.95"
+    },
+    {
+      "id": 58,
+      "file": "population/58.webp",
+      "pred_class": 1,
+      "pred_prob": 0.9996153712272644,
+      "o1": -0.999397305000457,
+      "o2": 15.0,
+      "o3": 3.49127197265625,
+      "phenotype": "Shape-X-7-Y-21-Path-5:3,1:4-Fill-False-Change-N-33.75"
+    },
+    {
+      "id": 59,
+      "file": "population/59.webp",
+      "pred_class": 0,
+      "pred_prob": 0.9999984502792358,
+      "o1": 0.9999978045889293,
+      "o2": 33.0,
+      "o3": 4.5257039070129395,
+      "phenotype": "Shape-X-10-Y-13-Path-5:6,5:2,5:2,3:0,5:0-Fill-False-Change-N-55.99"
+    },
+    {
+      "id": 60,
+      "file": "population/60.webp",
+      "pred_class": 1,
+      "pred_prob": 0.9996153712272644,
+      "o1": -0.999397305000457,
+      "o2": 15.0,
+      "o3": 3.49127197265625,
+      "phenotype": "Shape-X-7-Y-21-Path-5:3,1:4-Fill-False-Change-N-35.39"
+    },
+    {
+      "id": 61,
+      "file": "population/61.webp",
+      "pred_class": 0,
+      "pred_prob": 0.9999984502792358,
+      "o1": 0.9999969872023939,
+      "o2": 168.0,
+      "o3": 9.668684005737305,
+      "phenotype": "Shape-X-7-Y-7-Path-2:10,5:3,5:1,7:10,2:10,5:6,5:6-Fill-True-Change-N-95.99"
+    },
+    {
+      "id": 62,
+      "file": "population/62.webp",
+      "pred_class": 1,
+      "pred_prob": 0.9996153712272644,
+      "o1": -0.999397305000457,
+      "o2": 15.0,
+      "o3": 3.49127197265625,
+      "phenotype": "Shape-X-7-Y-21-Path-5:3,1:4-Fill-False-Change-N-59.89"
+    },
+    {
+      "id": 63,
+      "file": "population/63.webp",
+      "pred_class": 0,
+      "pred_prob": 0.9999984502792358,
+      "o1": 0.99999689657011,
+      "o2": 324.0,
+      "o3": 13.197393417358398,
+      "phenotype": "Shape-X-7-Y-29-Path-5:3,5:3,7:10,2:6,5:10-Fill-True-Change-N-51.99"
+    },
+    {
+      "id": 64,
+      "file": "population/64.webp",
+      "pred_class": 1,
+      "pred_prob": 0.9996153712272644,
+      "o1": -0.999397305000457,
+      "o2": 15.0,
+      "o3": 3.49127197265625,
+      "phenotype": "Shape-X-7-Y-21-Path-5:3,1:4-Fill-False-Change-N-89.95"
+    },
+    {
+      "id": 65,
+      "file": "population/65.webp",
+      "pred_class": 0,
+      "pred_prob": 0.9999979734420776,
+      "o1": 0.9999959460492391,
+      "o2": 1046.0,
+      "o3": 23.40410041809082,
+      "phenotype": "Shape-X-13-Y-13-Path-5:6,5:3,5:2,5:2,5:0-Fill-False-Change-N-59.59_X-13-Y-21-Path-2:8,5:10,5:1,7:10,5:6-Fill-True-Change-N-59.55_X-29-Y-21-Path-5:6,5:4,7:6,5:5,5:0,5:0,5:0-Fill-True-Change-N-95.95_X-29-Y-13-Path-0:2,5:2,1:2,5:10,5:2-Fill-False-Change-N-89.99"
+    },
+    {
+      "id": 66,
+      "file": "population/66.webp",
+      "pred_class": 1,
+      "pred_prob": 0.999599277973175,
+      "o1": -0.99920413698419,
+      "o2": 735.0,
+      "o3": 14.248452186584473,
+      "phenotype": "Shape-X-25-Y-10-Path-5:6,5:2,5:2,5:0,5:0,5:0,2:2-Fill-False-Change-N-98.95_X-13-Y-10-Path-2:6,5:10,5:1-Fill-True-Change-P-79.92_X-21-Y-4-Path-5:2,5:2,5:0,5:0,6:0-Fill-True-Change-N-89.99_X-21-Y-29-Path-5:5,5:8,5:6-Fill-True-Change-N-98.19_X-21-Y-13-Path-5:10,5:2,4:8,5:1,5:0-Fill-True-Change-P-59.75_X-21-Y-9-Path-5:6,5:1-Fill-True-Change-N-85.99_X-8-Y-31-Path-7:10,5:4,5:9,5:5-Fill-False-Change-N-99.58_X-22-Y-21-Path-5:10,5:10,1:7,7:6,5:2-Fill-False-Change-P-99.99_X-5-Y-5-Path-5:4,5:1,5:0,5:0,0:10,5:0-Fill-True-Change-P-99.19_X-21-Y-7-Path-5:3,5:3,4:3,5:1,5:0,5:0,5:0-Fill-False-Change-P-89.99_X-13-Y-5-Path-5:5,5:0,5:0,5:0,2:10-Fill-False-Change-N-99.99_X-13-Y-21-Path-5:10,5:2-Fill-False-Change-N-15.28_X-7-Y-22-Path-5:4,5:3-Fill-False-Change-N-09.19_X-21-Y-10-Path-5:10,5:0,2:1,5:1,5:0-Fill-True-Change-N-87.95_X-17-Y-5-Path-2:10,5:8,5:6,5:1,5:0,6:0,3:2-Fill-False-Change-N-27.51"
+    },
+    {
+      "id": 67,
+      "file": "population/67.webp",
+      "pred_class": 0,
+      "pred_prob": 0.9999978542327881,
+      "o1": 0.9999964627926374,
+      "o2": 243.0,
+      "o3": 11.622905731201172,
+      "phenotype": "Shape-X-7-Y-7-Path-2:10,5:3,5:2,5:2,5:0,5:0,5:0-Fill-True-Change-N-59.85"
+    },
+    {
+      "id": 68,
+      "file": "population/68.webp",
+      "pred_class": 1,
+      "pred_prob": 0.9995909333229065,
+      "o1": -0.999187616747804,
+      "o2": 1860.0,
+      "o3": 29.744611740112305,
+      "phenotype": "Shape-X-7-Y-21-Path-5:4,5:1-Fill-True-Change-N-97.99__Shape-X-18-Y-7-Path-2:10,5:10,5:3,5:2,2:10,2:7,7:10-Fill-True-Change-N-97.79_X-21-Y-5-Path-2:10,5:10,5:2,5:3,5:0,5:0,5:0-Fill-True-Change-N-99.98_X-21-Y-10-Path-5:8,4:9,1:10,2:8,2:10-Fill-True-Change-N-98.58_X-29-Y-29-Path-5:8,5:6-Fill-True-Change-N-89.99_X-29-Y-21-Path-5:6,5:10,2:6,5:5,5:6,5:0,5:0-Fill-True-Change-N-69.99__Shape-X-21-Y-17-Path-5:10,2:6,5:6,5:5,5:0-Fill-True-Change-N-75.99_X-18-Y-7-Path-2:10,5:10,5:3-Fill-False-Change-P-89.99_X-7-Y-21-Path-5:6,5:1-Fill-False-Change-N-29.96_X-13-Y-29-Path-5:9,5:2,5:2,6:6,4:0,5:0,5:0-Fill-True-Change-N-39.59_X-21-Y-21-Path-5:8,5:6,5:3,3:2,5:1-Fill-True-Change-N-79.85__Shape-X-7-Y-21-Path-5:3,5:2-Fill-True-Change-N-97.99_X-17-Y-5-Path-5:5,5:0-Fill-True-Change-N-98.59_X-5-Y-21-Path-5:3,5:2,5:0,5:0,5:0-Fill-False-Change-P-55.59_X-29-Y-5-Path-5:3,0:5,5:2,5:0,2:6-Fill-False-Change-N-67.98_X-13-Y-21-Path-1:8,5:10,5:9,7:10,2:6-Fill-False-Change-N-85.77__Shape-X-13-Y-21-Path-5:10,5:1,5:2-Fill-False-Change-P-99.95_X-5-Y-29-Path-6:9,5:1,6:9-Fill-True-Change-N-99.69_X-13-Y-29-Path-3:2,2:0,5:10,5:1,2:1-Fill-False-Change-N-98.09__Shape-X-21-Y-17-Path-1:8,5:9,5:10,5:6-Fill-True-Change-N-01.70_X-19-Y-13-Path-5:3,5:6,3:1,5:3,5:2,5:0-Fill-False-Change-N-98.31_X-29-Y-5-Path-5:2,5:2,5:1-Fill-True-Change-N-59.90_X-25-Y-5-Path-5:4,0:1,2:4-Fill-False-Change-N-58.90_X-5-Y-5-Path-0:10,5:5,5:0,5:0,5:0-Fill-False-Change-N-97.94_X-18-Y-14-Path-0:10,5:1-Fill-True-Change-N-86.43_X-2-Y-29-Path-5:2,5:0,5:0,1:1-Fill-False-Change-N-05.39_X-13-Y-29-Path-0:2,5:4,5:8,5:1,2:2,5:2,5:0-Fill-False-Change-N-18.79_X-5-Y-21-Path-5:4,5:1,4:0-Fill-True-Change-N-79.77_X-10-Y-5-Path-5:3,2:1,5:2-Fill-False-Change-N-98.97_X-5-Y-5-Path-5:5,5:0,5:0,5:0,5:0,5:0,5:0-Fill-False-Change-N-99.77_X-10-Y-15-Path-2:8,5:10,5:0-Fill-True-Change-N-79.77_X-25-Y-15-Path-0:1,5:5-Fill-False-Change-P-76.10_X-16-Y-5-Path-1:1,5:1,0:4,5:1,5:1,7:1-Fill-True-Change-N-70.33_X-13-Y-17-Path-4:10,0:4,3:6,1:3-Fill-False-Change-P-66.67_X-29-Y"
+    },
+    {
+      "id": 69,
+      "file": "population/69.webp",
+      "pred_class": 0,
+      "pred_prob": 0.9999978542327881,
+      "o1": 0.9999964627926374,
+      "o2": 243.0,
+      "o3": 11.622905731201172,
+      "phenotype": "Shape-X-7-Y-7-Path-2:10,5:3,5:2,5:2,5:0,5:0,5:0-Fill-True-Change-N-95.12"
+    },
+    {
+      "id": 70,
+      "file": "population/70.webp",
+      "pred_class": 1,
+      "pred_prob": 0.9994769096374512,
+      "o1": -0.9994276331344736,
+      "o2": 33.0,
+      "o3": 4.191145896911621,
+      "phenotype": "Shape-X-7-Y-21-Path-1:6,5:10-Fill-False-Change-N-89.95"
+    },
+    {
+      "id": 71,
+      "file": "population/71.webp",
+      "pred_class": 0,
+      "pred_prob": 0.999997615814209,
+      "o1": 0.9999962231501058,
+      "o2": 45.0,
+      "o3": 5.204526901245117,
+      "phenotype": "Shape-X-5-Y-10-Path-5:1,5:2,7:2,5:3,5:1-Fill-True-Change-N-98.55"
+    },
+    {
+      "id": 72,
+      "file": "population/72.webp",
+      "pred_class": 1,
+      "pred_prob": 0.9994378089904785,
+      "o1": -0.9988996651954949,
+      "o2": 18.0,
+      "o3": 3.848637342453003,
+      "phenotype": "Shape-X-7-Y-21-Path-5:2,5:4-Fill-True-Change-N-59.88"
+    },
+    {
+      "id": 73,
+      "file": "population/73.webp",
+      "pred_class": 0,
+      "pred_prob": 0.999997615814209,
+      "o1": 0.9999956629519602,
+      "o2": 216.0,
+      "o3": 8.057455062866211,
+      "phenotype": "Shape-X-21-Y-29-Path-2:2,5:3,5:10-Fill-True-Change-N-95.98_X-21-Y-4-Path-5:2,5:1,5:1,7:0,4:8-Fill-False-Change-N-97.59_X-29-Y-29-Path-5:10,5:6,5:9-Fill-True-Change-N-98.59"
+    },
+    {
+      "id": 74,
+      "file": "population/74.webp",
+      "pred_class": 1,
+      "pred_prob": 0.9994378089904785,
+      "o1": -0.9988996651954949,
+      "o2": 18.0,
+      "o3": 3.848637342453003,
+      "phenotype": "Shape-X-7-Y-21-Path-5:2,5:4-Fill-True-Change-N-55.95"
+    },
+    {
+      "id": 75,
+      "file": "population/75.webp",
+      "pred_class": 0,
+      "pred_prob": 0.9999973177909851,
+      "o1": 0.9999946759819522,
+      "o2": 63.0,
+      "o3": 6.21528434753418,
+      "phenotype": "Shape-X-7-Y-13-Path-5:3,2:6,5:2,5:2,5:0-Fill-True-Change-N-45.59"
+    },
+    {
+      "id": 76,
+      "file": "population/76.webp",
+      "pred_class": 1,
+      "pred_prob": 0.9994378089904785,
+      "o1": -0.9988996651954949,
+      "o2": 18.0,
+      "o3": 3.848637342453003,
+      "phenotype": "Shape-X-7-Y-21-Path-5:3,5:2-Fill-False-Change-N-90.99"
+    },
+    {
+      "id": 77,
+      "file": "population/77.webp",
+      "pred_class": 0,
+      "pred_prob": 0.9999971389770508,
+      "o1": 0.9999951040374526,
+      "o2": 12.0,
+      "o3": 2.666364908218384,
+      "phenotype": "Shape-X-7-Y-4-Path-5:3,5:1,5:0-Fill-True-Change-N-43.55"
+    },
+    {
+      "id": 78,
+      "file": "population/78.webp",
+      "pred_class": 1,
+      "pred_prob": 0.9994378089904785,
+      "o1": -0.9988996651954949,
+      "o2": 18.0,
+      "o3": 3.848637342453003,
+      "phenotype": "Shape-X-7-Y-21-Path-5:3,5:3-Fill-True-Change-N-48.98"
+    },
+    {
+      "id": 79,
+      "file": "population/79.webp",
+      "pred_class": 0,
+      "pred_prob": 0.9999969005584717,
+      "o1": 0.9999946790421745,
+      "o2": 290.0,
+      "o3": 11.761981964111328,
+      "phenotype": "Shape-X-7-Y-21-Path-0:10,5:10-Fill-True-Change-N-99.95"
+    },
+    {
+      "id": 80,
+      "file": "population/80.webp",
+      "pred_class": 1,
+      "pred_prob": 0.9994378089904785,
+      "o1": -0.9988996651954949,
+      "o2": 18.0,
+      "o3": 3.848637342453003,
+      "phenotype": "Shape-X-7-Y-21-Path-5:3,5:2-Fill-False-Change-N-89.99"
+    },
+    {
+      "id": 81,
+      "file": "population/81.webp",
+      "pred_class": 0,
+      "pred_prob": 0.9999966621398926,
+      "o1": 0.999993456771108,
+      "o2": 36.0,
+      "o3": 2.594697952270508,
+      "phenotype": "Shape-X-14-Y-21-Path-5:6,5:6-Fill-True-Change-N-95.98"
+    },
+    {
+      "id": 82,
+      "file": "population/82.webp",
+      "pred_class": 1,
+      "pred_prob": 0.9994378089904785,
+      "o1": -0.9988996651954949,
+      "o2": 18.0,
+      "o3": 3.848637342453003,
+      "phenotype": "Shape-X-7-Y-21-Path-5:3,5:2-Fill-False-Change-N-51.19"
+    },
+    {
+      "id": 83,
+      "file": "population/83.webp",
+      "pred_class": 0,
+      "pred_prob": 0.9999964237213135,
+      "o1": 0.9999930296455659,
+      "o2": 21.0,
+      "o3": 4.052925109863281,
+      "phenotype": "Shape-X-7-Y-18-Path-5:5,5:2,5:0-Fill-True-Change-N-95.54"
+    },
+    {
+      "id": 84,
+      "file": "population/84.webp",
+      "pred_class": 1,
+      "pred_prob": 0.9994378089904785,
+      "o1": -0.9988996651954949,
+      "o2": 18.0,
+      "o3": 3.848637342453003,
+      "phenotype": "Shape-X-7-Y-21-Path-5:3,5:2-Fill-False-Change-N-99.89"
+    },
+    {
+      "id": 85,
+      "file": "population/85.webp",
+      "pred_class": 0,
+      "pred_prob": 0.9999964237213135,
+      "o1": 0.9999930296455659,
+      "o2": 21.0,
+      "o3": 4.052925109863281,
+      "phenotype": "Shape-X-7-Y-18-Path-5:6,5:1,5:0-Fill-True-Change-N-59.59"
+    },
+    {
+      "id": 86,
+      "file": "population/86.webp",
+      "pred_class": 1,
+      "pred_prob": 0.9994378089904785,
+      "o1": -0.9988996651954949,
+      "o2": 18.0,
+      "o3": 3.848637342453003,
+      "phenotype": "Shape-X-7-Y-21-Path-5:5,5:1-Fill-True-Change-N-19.99"
+    },
+    {
+      "id": 87,
+      "file": "population/87.webp",
+      "pred_class": 0,
+      "pred_prob": 0.9999963045120239,
+      "o1": 0.9999930965163912,
+      "o2": 99.0,
+      "o3": 7.571441650390625,
+      "phenotype": "Shape-X-7-Y-13-Path-5:5,7:3,5:5,5:0,5:0,5:0,2:10-Fill-True-Change-N-75.55"
+    },
+    {
+      "id": 88,
+      "file": "population/88.webp",
+      "pred_class": 1,
+      "pred_prob": 0.9994378089904785,
+      "o1": -0.9988996651954949,
+      "o2": 18.0,
+      "o3": 3.848637342453003,
+      "phenotype": "Shape-X-7-Y-21-Path-5:3,5:2-Fill-False-Change-N-87.95"
+    },
+    {
+      "id": 89,
+      "file": "population/89.webp",
+      "pred_class": 0,
+      "pred_prob": 0.9999960064888,
+      "o1": 0.9999923028158264,
+      "o2": 398.0,
+      "o3": 11.263069152832031,
+      "phenotype": "Shape-X-7-Y-21-Path-1:7,7:10-Fill-True-Change-N-75.91"
+    },
+    {
+      "id": 90,
+      "file": "population/90.webp",
+      "pred_class": 1,
+      "pred_prob": 0.9994378089904785,
+      "o1": -0.9988996651954949,
+      "o2": 18.0,
+      "o3": 3.848637342453003,
+      "phenotype": "Shape-X-7-Y-21-Path-5:3,5:3-Fill-True-Change-N-59.59"
+    },
+    {
+      "id": 91,
+      "file": "population/91.webp",
+      "pred_class": 0,
+      "pred_prob": 0.9999955892562866,
+      "o1": 0.9999915903595138,
+      "o2": 24.0,
+      "o3": 3.519164800643921,
+      "phenotype": "Shape-X-7-Y-7-Path-6:3,5:2,5:2,5:0,5:0,5:0,5:0-Fill-False-Change-N-59.95"
+    },
+    {
+      "id": 92,
+      "file": "population/92.webp",
+      "pred_class": 1,
+      "pred_prob": 0.9994378089904785,
+      "o1": -0.9988996651954949,
+      "o2": 18.0,
+      "o3": 3.848637342453003,
+      "phenotype": "Shape-X-7-Y-21-Path-5:2,5:4-Fill-True-Change-N-93.95"
+    },
+    {
+      "id": 93,
+      "file": "population/93.webp",
+      "pred_class": 0,
+      "pred_prob": 0.9999954700469971,
+      "o1": 0.9999927573721834,
+      "o2": 18.0,
+      "o3": 3.5226023197174072,
+      "phenotype": "Shape-X-29-Y-21-Path-5:4,5:2-Fill-True-Change-N-99.89"
+    },
+    {
+      "id": 94,
+      "file": "population/94.webp",
+      "pred_class": 1,
+      "pred_prob": 0.9994378089904785,
+      "o1": -0.9988996651954949,
+      "o2": 18.0,
+      "o3": 3.848637342453003,
+      "phenotype": "Shape-X-7-Y-21-Path-5:3,5:2-Fill-False-Change-N-55.95"
+    },
+    {
+      "id": 95,
+      "file": "population/95.webp",
+      "pred_class": 0,
+      "pred_prob": 0.9999939203262329,
+      "o1": 0.9999913923659278,
+      "o2": 24.0,
+      "o3": 3.394012451171875,
+      "phenotype": "Shape-X-7-Y-13-Path-5:3,5:3,5:1,5:0,5:0-Fill-False-Change-N-59.59"
+    },
+    {
+      "id": 96,
+      "file": "population/96.webp",
+      "pred_class": 1,
+      "pred_prob": 0.9994378089904785,
+      "o1": -0.9988996651954949,
+      "o2": 18.0,
+      "o3": 3.848637342453003,
+      "phenotype": "Shape-X-7-Y-21-Path-5:3,5:2-Fill-False-Change-N-58.99"
+    },
+    {
+      "id": 97,
+      "file": "population/97.webp",
+      "pred_class": 0,
+      "pred_prob": 0.9999939203262329,
+      "o1": 0.9999913923659278,
+      "o2": 24.0,
+      "o3": 3.394012451171875,
+      "phenotype": "Shape-X-7-Y-13-Path-5:1,5:4,5:2,5:0,5:0-Fill-False-Change-N-58.59"
+    },
+    {
+      "id": 98,
+      "file": "population/98.webp",
+      "pred_class": 1,
+      "pred_prob": 0.9994378089904785,
+      "o1": -0.9988996651954949,
+      "o2": 18.0,
+      "o3": 3.848637342453003,
+      "phenotype": "Shape-X-7-Y-21-Path-5:4,5:1-Fill-False-Change-N-55.59"
+    },
+    {
+      "id": 99,
+      "file": "population/99.webp",
+      "pred_class": 0,
+      "pred_prob": 0.9999939203262329,
+      "o1": 0.9999907117276052,
+      "o2": 887.0,
+      "o3": 20.751802444458008,
+      "phenotype": "Shape-X-7-Y-21-Path-5:3,5:2-Fill-True-Change-N-55.94_X-21-Y-5-Path-5:4,5:1-Fill-True-Change-N-59.55_X-29-Y-13-Path-5:10,5:3,5:0,5:0,5:0-Fill-False-Change-N-59.59_X-13-Y-21-Path-2:8,5:10,5:1,7:10,5:6-Fill-True-Change-N-59.55_X-29-Y-21-Path-5:6,5:10,7:1,5:2,5:2,5:0,5:0-Fill-True-Change-N-95.95_X-29-Y-13-Path-0:2,5:2,1:2,5:10,5:2-Fill-False-Change-N-89.99"
+    }
+  ],
+  "heats": [
+    "sum_intensity",
+    "mean_intensity",
+    "change_frequency",
+    "max_intensity",
+    "cochange_strict",
+    "spatial_coherence"
+  ],
+  "attr": [
+    "integrated_gradients",
+    "input_x_gradient",
+    "smoothgrad",
+    "gradcam"
+  ]
+}

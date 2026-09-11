@@ -1,18 +1,27 @@
 {
   "version": 1,
-  "generated_at": "2026-09-11T13:16:09Z",
-  "datasets": [
-    "mnist",
-    "cifar10",
-    "imagenet100"
-  ],
-  "metrics": {
-    "mnist": true,
-    "cifar10": true,
-    "imagenet100": true
+  "generated_at": "2026-09-11T13:33:30Z",
+  "datasets": {
+    "mnist": {
+      "name": "mnist",
+      "num_classes": 10,
+      "factual": 100,
+      "blank": 10
+    },
+    "cifar10": {
+      "name": "cifar10",
+      "num_classes": 10,
+      "factual": 100,
+      "blank": 10
+    },
+    "imagenet100": {
+      "name": "imagenet100",
+      "num_classes": 100,
+      "factual": 100,
+      "blank": 21
+    }
   },
-  "mode": "metrics-only+fixture",
-  "evolution": {
+  "metrics": {
     "mnist": true,
     "cifar10": true,
     "imagenet100": true

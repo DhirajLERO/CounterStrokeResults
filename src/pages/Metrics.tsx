@@ -178,8 +178,8 @@ function ScatterPanel({
                 data={points.filter((p) => p.method === id)}
                 fill={methodColor(id)}
                 onClick={(p) => {
-                  const row = p as ScatterRow;
-                  if (row.sample_idx != null) nav(`/explore/${dataset}/${row.sample_idx}`);
+                  const row = (p as { payload?: ScatterRow }).payload;
+                  if (row?.sample_idx != null) nav(`/explore/${dataset}/${row.sample_idx}`);
                 }}
               />
             ))}

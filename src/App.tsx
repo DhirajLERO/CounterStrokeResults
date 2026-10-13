@@ -1,5 +1,6 @@
 import { HashRouter, Navigate, Route, Routes } from "react-router-dom";
 import { BlankPage } from "./pages/Blank";
+import { BudgetPage } from "./pages/Budget";
 import { EvolutionPage } from "./pages/Evolution";
 import { ExplorePage } from "./pages/Explore";
 import { HomePage } from "./pages/Home";
@@ -15,6 +16,7 @@ export default function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/method" element={<MethodPage />} />
         <Route path="/evolution" element={<EvolutionPage />} />
+        <Route path="/budget" element={<BudgetPage />} />
         <Route path="/metrics" element={<MetricsPage />} />
         <Route path="/explore" element={<Navigate to="/explore/mnist" replace />} />
         <Route path="/explore/:dataset" element={<ExplorePage />} />

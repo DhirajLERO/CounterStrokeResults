@@ -4,6 +4,7 @@ const links = [
   { to: "/", label: "Home", end: true },
   { to: "/method", label: "Method" },
   { to: "/evolution", label: "Evolution" },
+  { to: "/budget", label: "Budget" },
   { to: "/metrics", label: "Metrics" },
   { to: "/explore", label: "Explore" },
   { to: "/blank", label: "Blank canvas" },

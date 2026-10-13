@@ -2,6 +2,10 @@ import type {
   BlankIndexItem,
   BlankMeta,
   Catalog,
+  BudgetCurves,
+  BudgetIndex,
+  BudgetLines,
+  BudgetTable,
   EvolutionCurves,
   EvolutionIndex,
   EvolutionPareto,
@@ -55,6 +59,10 @@ export const loadEvolutionCurves = (ds: string) =>
   getJson<EvolutionCurves>(`evolution/${ds}/curves.json`);
 export const loadEvolutionPareto = (ds: string) =>
   getJson<EvolutionPareto>(`evolution/${ds}/pareto.json`);
+export const loadBudgetIndex = () => getJson<BudgetIndex>("budget/index.json");
+export const loadBudgetTable = (ds: string) => getJson<BudgetTable>(`budget/${ds}.json`);
+export const loadBudgetLines = () => getJson<BudgetLines>("budget/lines.json");
+export const loadBudgetCurves = (ds: string) => getJson<BudgetCurves>(`budget/curves/${ds}.json`);
 
 export function sampleAsset(ds: string, idx: number, rel: string): string {
   return `${DATA}/factual/${ds}/${idx}/${rel}`;

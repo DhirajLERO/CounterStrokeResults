@@ -163,6 +163,65 @@ export type EvolutionPareto = {
   fixture?: boolean;
 };
 
+export type BudgetCheckpoint = { generation: number; nEvaluations: number };
+
+export type BudgetMetricCell = {
+  generation: number;
+  nEvaluations: number;
+  value: number;
+  percent: number;
+};
+
+export type BudgetMetricRow = {
+  id: string;
+  label: string;
+  direction: "lower" | "higher";
+  baseline: number;
+  cells: BudgetMetricCell[];
+};
+
+export type BudgetTable = {
+  dataset: string;
+  readouts: Record<string, { main: BudgetMetricRow[]; extra: BudgetMetricRow[] }>;
+};
+
+export type BudgetLinePoint = {
+  generation?: number;
+  nEvaluations: number;
+  n?: number;
+  l2: number;
+  l2Percent: number;
+  sparsity: number;
+  sparsityPercent: number;
+};
+
+export type BudgetLines = Record<
+  string,
+  Record<string, { search: BudgetLinePoint[]; grammar: { sharedN: number; paperN: number; points: BudgetLinePoint[] } }>
+>;
+
+export type BudgetCurves = {
+  dataset: string;
+  nGenerations: number;
+  marks: number[];
+  gen: number[];
+  mean: Record<"o1" | "o2" | "o3", number[]>;
+  std: Record<"o1" | "o2" | "o3", number[]>;
+};
+
+export type BudgetIndex = {
+  readouts: { id: string; label: string }[];
+  datasets: {
+    id: string;
+    label: string;
+    shares: string;
+    mainBudget: string;
+    checkpoints: BudgetCheckpoint[];
+  }[];
+  notes: { percent: string; kid: string; imagenetValidity: string; grammar: string };
+  radar: string;
+};
+
 export type EvolutionIndex = {
   datasets: Record<
     string,

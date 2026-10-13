@@ -1,0 +1,1025 @@
+{
+  "dataset": "cifar10",
+  "readouts": {
+    "CS_sparse": {
+      "main": [
+        {
+          "id": "l2_distance",
+          "label": "L2",
+          "direction": "lower",
+          "baseline": 1.6961204537625079,
+          "cells": [
+            {
+              "generation": 100,
+              "nEvaluations": 30300,
+              "value": 2.0156801013534014,
+              "percent": 18.84062224955861
+            },
+            {
+              "generation": 200,
+              "nEvaluations": 60300,
+              "value": 1.776515189672518,
+              "percent": 4.739919015283984
+            },
+            {
+              "generation": 300,
+              "nEvaluations": 90300,
+              "value": 1.8382436088451575,
+              "percent": 8.379307894517602
+            }
+          ]
+        },
+        {
+          "id": "sparsity_frac",
+          "label": "Sparsity",
+          "direction": "lower",
+          "baseline": 0.00443359375,
+          "cells": [
+            {
+              "generation": 100,
+              "nEvaluations": 30300,
+              "value": 0.006591796875,
+              "percent": 48.6784140969163
+            },
+            {
+              "generation": 200,
+              "nEvaluations": 60300,
+              "value": 0.005364583333333334,
+              "percent": 20.998531571218813
+            },
+            {
+              "generation": 300,
+              "nEvaluations": 90300,
+              "value": 0.004912109375,
+              "percent": 10.792951541850226
+            }
+          ]
+        },
+        {
+          "id": "ssim_to_original",
+          "label": "SSIM to original",
+          "direction": "higher",
+          "baseline": 0.9713124603033065,
+          "cells": [
+            {
+              "generation": 100,
+              "nEvaluations": 30300,
+              "value": 0.9638937926292419,
+              "percent": -0.7637776696232271
+            },
+            {
+              "generation": 200,
+              "nEvaluations": 60300,
+              "value": 0.9713544344902039,
+              "percent": 0.004321388699597663
+            },
+            {
+              "generation": 300,
+              "nEvaluations": 90300,
+              "value": 0.9694854938983917,
+              "percent": -0.18809255307446254
+            }
+          ]
+        },
+        {
+          "id": "lpips_to_original",
+          "label": "LPIPS to original",
+          "direction": "lower",
+          "baseline": 0.04374087228703502,
+          "cells": [
+            {
+              "generation": 100,
+              "nEvaluations": 30300,
+              "value": 0.04845528735777407,
+              "percent": 10.778054538561223
+            },
+            {
+              "generation": 200,
+              "nEvaluations": 60300,
+              "value": 0.04139232047485166,
+              "percent": -5.369238630569058
+            },
+            {
+              "generation": 300,
+              "nEvaluations": 90300,
+              "value": 0.04350787931304694,
+              "percent": -0.5326665011596924
+            }
+          ]
+        },
+        {
+          "id": "p_pred_cf",
+          "label": "Predicted probability",
+          "direction": "higher",
+          "baseline": 0.8246059370040894,
+          "cells": [
+            {
+              "generation": 100,
+              "nEvaluations": 30300,
+              "value": 0.8047278514504432,
+              "percent": -2.410616351595288
+            },
+            {
+              "generation": 200,
+              "nEvaluations": 60300,
+              "value": 0.7751226055622101,
+              "percent": -6.00084588544914
+            },
+            {
+              "generation": 300,
+              "nEvaluations": 90300,
+              "value": 0.7792133352160454,
+              "percent": -5.504762911720199
+            }
+          ]
+        },
+        {
+          "id": "frechet_inception_distance_cf_vs_originals",
+          "label": "FID (CF vs originals)",
+          "direction": "lower",
+          "baseline": 29.26175406841162,
+          "cells": [
+            {
+              "generation": 100,
+              "nEvaluations": 30300,
+              "value": 34.30295201730701,
+              "percent": 17.227941760119624
+            },
+            {
+              "generation": 200,
+              "nEvaluations": 60300,
+              "value": 29.585895228764002,
+              "percent": 1.1077297676501794
+            },
+            {
+              "generation": 300,
+              "nEvaluations": 90300,
+              "value": 30.273465706906222,
+              "percent": 3.4574538359159974
+            }
+          ]
+        },
+        {
+          "id": "kid_mean_cf_vs_originals",
+          "label": "KID",
+          "direction": "lower",
+          "baseline": -0.004803798161447048,
+          "cells": [
+            {
+              "generation": 100,
+              "nEvaluations": 30300,
+              "value": -0.0032020043581724167,
+              "percent": 33.34431942061702
+            },
+            {
+              "generation": 200,
+              "nEvaluations": 60300,
+              "value": -0.005486276000738144,
+              "percent": -14.207046515158183
+            },
+            {
+              "generation": 300,
+              "nEvaluations": 90300,
+              "value": -0.00542104709893465,
+              "percent": -12.849185514107203
+            }
+          ]
+        },
+        {
+          "id": "cmmd_orig_vs_cf_distribution",
+          "label": "CMMD (original vs CF)",
+          "direction": "lower",
+          "baseline": 0.06928683859230844,
+          "cells": [
+            {
+              "generation": 100,
+              "nEvaluations": 30300,
+              "value": 0.09468464446205083,
+              "percent": 36.656032207192965
+            },
+            {
+              "generation": 200,
+              "nEvaluations": 60300,
+              "value": 0.06965303256745159,
+              "percent": 0.5285188104740557
+            },
+            {
+              "generation": 300,
+              "nEvaluations": 90300,
+              "value": 0.07238504736517548,
+              "percent": 4.471568967228031
+            }
+          ]
+        }
+      ],
+      "extra": [
+        {
+          "id": "ssim_to_random_pred_class",
+          "label": "SSIM to predicted class",
+          "direction": "higher",
+          "baseline": 0.09668640356743709,
+          "cells": [
+            {
+              "generation": 300,
+              "nEvaluations": 90300,
+              "value": 0.08027118705678732,
+              "percent": -16.97779202139879
+            }
+          ]
+        },
+        {
+          "id": "lpips_to_random_pred_class",
+          "label": "LPIPS to predicted class",
+          "direction": "lower",
+          "baseline": 0.4503971818089485,
+          "cells": [
+            {
+              "generation": 300,
+              "nEvaluations": 90300,
+              "value": 0.45644375056028363,
+              "percent": 1.3424970216398902
+            }
+          ]
+        },
+        {
+          "id": "inception_sqdist_to_source_class_mean",
+          "label": "Embedding distance to source class",
+          "direction": "lower",
+          "baseline": 90.69194368288832,
+          "cells": [
+            {
+              "generation": 300,
+              "nEvaluations": 90300,
+              "value": 92.48781690334128,
+              "percent": 1.980190464031046
+            }
+          ]
+        },
+        {
+          "id": "inception_sqdist_to_predicted_class_mean",
+          "label": "Embedding distance to predicted class",
+          "direction": "lower",
+          "baseline": 70.52241478090677,
+          "cells": [
+            {
+              "generation": 300,
+              "nEvaluations": 90300,
+              "value": 78.34106427854199,
+              "percent": 11.086758049799567
+            }
+          ]
+        },
+        {
+          "id": "frechet_inception_distance_vs_source_y_true",
+          "label": "FID vs source class",
+          "direction": "lower",
+          "baseline": 173.01347626419948,
+          "cells": [
+            {
+              "generation": 300,
+              "nEvaluations": 90300,
+              "value": 171.6515431582772,
+              "percent": -0.7871832503050467
+            }
+          ]
+        },
+        {
+          "id": "frechet_inception_distance_vs_predicted_class",
+          "label": "FID vs predicted class",
+          "direction": "lower",
+          "baseline": 175.7987828947724,
+          "cells": [
+            {
+              "generation": 300,
+              "nEvaluations": 90300,
+              "value": 174.35526402006323,
+              "percent": -0.8211199480107895
+            }
+          ]
+        },
+        {
+          "id": "cmmd_vs_stratified_source_y_true",
+          "label": "CMMD vs source class",
+          "direction": "lower",
+          "baseline": 0.08573360783037387,
+          "cells": [
+            {
+              "generation": 300,
+              "nEvaluations": 90300,
+              "value": 0.09106099246602994,
+              "percent": 6.213881312677802
+            }
+          ]
+        },
+        {
+          "id": "cmmd_vs_stratified_predicted_class",
+          "label": "CMMD vs predicted class",
+          "direction": "lower",
+          "baseline": 0.10638780704130824,
+          "cells": [
+            {
+              "generation": 300,
+              "nEvaluations": 90300,
+              "value": 0.1145590801125973,
+              "percent": 7.680648091671186
+            }
+          ]
+        },
+        {
+          "id": "kid_std_cf_vs_originals",
+          "label": "KID std",
+          "direction": "lower",
+          "baseline": 0.0020744013600051403,
+          "cells": [
+            {
+              "generation": 300,
+              "nEvaluations": 90300,
+              "value": 0.0023732706904411316,
+              "percent": 14.407497806270756
+            }
+          ]
+        }
+      ]
+    },
+    "CS_prox": {
+      "main": [
+        {
+          "id": "l2_distance",
+          "label": "L2",
+          "direction": "lower",
+          "baseline": 1.1112902330033632,
+          "cells": [
+            {
+              "generation": 100,
+              "nEvaluations": 30300,
+              "value": 1.4799759598957516,
+              "percent": 33.17636706803241
+            },
+            {
+              "generation": 200,
+              "nEvaluations": 60300,
+              "value": 1.309803248003265,
+              "percent": 17.86329161405499
+            },
+            {
+              "generation": 300,
+              "nEvaluations": 90300,
+              "value": 1.2890824042051636,
+              "percent": 15.99871625986498
+            }
+          ]
+        },
+        {
+          "id": "sparsity_frac",
+          "label": "Sparsity",
+          "direction": "lower",
+          "baseline": 0.008447265625,
+          "cells": [
+            {
+              "generation": 100,
+              "nEvaluations": 30300,
+              "value": 0.013203125,
+              "percent": 56.30057803468207
+            },
+            {
+              "generation": 200,
+              "nEvaluations": 60300,
+              "value": 0.010211588541666667,
+              "percent": 20.886319845857418
+            },
+            {
+              "generation": 300,
+              "nEvaluations": 90300,
+              "value": 0.009381510416666667,
+              "percent": 11.0597302504817
+            }
+          ]
+        },
+        {
+          "id": "ssim_to_original",
+          "label": "SSIM to original",
+          "direction": "higher",
+          "baseline": 0.9772955203056335,
+          "cells": [
+            {
+              "generation": 100,
+              "nEvaluations": 30300,
+              "value": 0.9678930681943894,
+              "percent": -0.9620889399251175
+            },
+            {
+              "generation": 200,
+              "nEvaluations": 60300,
+              "value": 0.974453501701355,
+              "percent": -0.2908044235575404
+            },
+            {
+              "generation": 300,
+              "nEvaluations": 90300,
+              "value": 0.9754471224546433,
+              "percent": -0.1891339735612589
+            }
+          ]
+        },
+        {
+          "id": "lpips_to_original",
+          "label": "LPIPS to original",
+          "direction": "lower",
+          "baseline": 0.022071411364199777,
+          "cells": [
+            {
+              "generation": 100,
+              "nEvaluations": 30300,
+              "value": 0.028511820789171905,
+              "percent": 29.179871276463032
+            },
+            {
+              "generation": 200,
+              "nEvaluations": 60300,
+              "value": 0.023642087939269914,
+              "percent": 7.116339545090455
+            },
+            {
+              "generation": 300,
+              "nEvaluations": 90300,
+              "value": 0.023686934604711496,
+              "percent": 7.319528478963182
+            }
+          ]
+        },
+        {
+          "id": "p_pred_cf",
+          "label": "Predicted probability",
+          "direction": "higher",
+          "baseline": 0.8290194883942604,
+          "cells": [
+            {
+              "generation": 100,
+              "nEvaluations": 30300,
+              "value": 0.7824106800556183,
+              "percent": -5.622160756307355
+            },
+            {
+              "generation": 200,
+              "nEvaluations": 60300,
+              "value": 0.7791247254610062,
+              "percent": -6.018527143420489
+            },
+            {
+              "generation": 300,
+              "nEvaluations": 90300,
+              "value": 0.800101270377636,
+              "percent": -3.488243451626997
+            }
+          ]
+        },
+        {
+          "id": "frechet_inception_distance_cf_vs_originals",
+          "label": "FID (CF vs originals)",
+          "direction": "lower",
+          "baseline": 25.56217983452251,
+          "cells": [
+            {
+              "generation": 100,
+              "nEvaluations": 30300,
+              "value": 30.062501511480264,
+              "percent": 17.60539087859765
+            },
+            {
+              "generation": 200,
+              "nEvaluations": 60300,
+              "value": 25.89939551252411,
+              "percent": 1.3191976591377326
+            },
+            {
+              "generation": 300,
+              "nEvaluations": 90300,
+              "value": 27.53466364741189,
+              "percent": 7.716414741067894
+            }
+          ]
+        },
+        {
+          "id": "kid_mean_cf_vs_originals",
+          "label": "KID",
+          "direction": "lower",
+          "baseline": -0.004861876834183931,
+          "cells": [
+            {
+              "generation": 100,
+              "nEvaluations": 30300,
+              "value": -0.002459170762449503,
+              "percent": 49.41931179418131
+            },
+            {
+              "generation": 200,
+              "nEvaluations": 60300,
+              "value": -0.004980308935046196,
+              "percent": -2.4359337947347144
+            },
+            {
+              "generation": 300,
+              "nEvaluations": 90300,
+              "value": -0.0044197700917720795,
+              "percent": 9.093334888769549
+            }
+          ]
+        },
+        {
+          "id": "cmmd_orig_vs_cf_distribution",
+          "label": "CMMD (original vs CF)",
+          "direction": "lower",
+          "baseline": 0.05060303553516832,
+          "cells": [
+            {
+              "generation": 100,
+              "nEvaluations": 30300,
+              "value": 0.06030438945048289,
+              "percent": 19.17148608322574
+            },
+            {
+              "generation": 200,
+              "nEvaluations": 60300,
+              "value": 0.053249164162938456,
+              "percent": 5.229189513603628
+            },
+            {
+              "generation": 300,
+              "nEvaluations": 90300,
+              "value": 0.052693195939257365,
+              "percent": 4.130503994442031
+            }
+          ]
+        }
+      ],
+      "extra": [
+        {
+          "id": "ssim_to_random_pred_class",
+          "label": "SSIM to predicted class",
+          "direction": "higher",
+          "baseline": 0.08175219496391946,
+          "cells": [
+            {
+              "generation": 300,
+              "nEvaluations": 90300,
+              "value": 0.06717226770240814,
+              "percent": -17.834294562911772
+            }
+          ]
+        },
+        {
+          "id": "lpips_to_random_pred_class",
+          "label": "LPIPS to predicted class",
+          "direction": "lower",
+          "baseline": 0.47250101566314695,
+          "cells": [
+            {
+              "generation": 300,
+              "nEvaluations": 90300,
+              "value": 0.4795271965861321,
+              "percent": 1.4870192211383935
+            }
+          ]
+        },
+        {
+          "id": "inception_sqdist_to_source_class_mean",
+          "label": "Embedding distance to source class",
+          "direction": "lower",
+          "baseline": 93.12765107652416,
+          "cells": [
+            {
+              "generation": 300,
+              "nEvaluations": 90300,
+              "value": 93.97761480508379,
+              "percent": 0.9126867463469077
+            }
+          ]
+        },
+        {
+          "id": "inception_sqdist_to_predicted_class_mean",
+          "label": "Embedding distance to predicted class",
+          "direction": "lower",
+          "baseline": 68.99085902435436,
+          "cells": [
+            {
+              "generation": 300,
+              "nEvaluations": 90300,
+              "value": 75.49763451794156,
+              "percent": 9.431358857686135
+            }
+          ]
+        },
+        {
+          "id": "frechet_inception_distance_vs_source_y_true",
+          "label": "FID vs source class",
+          "direction": "lower",
+          "baseline": 174.541081897711,
+          "cells": [
+            {
+              "generation": 300,
+              "nEvaluations": 90300,
+              "value": 175.93262141321588,
+              "percent": 0.7972561533223415
+            }
+          ]
+        },
+        {
+          "id": "frechet_inception_distance_vs_predicted_class",
+          "label": "FID vs predicted class",
+          "direction": "lower",
+          "baseline": 167.0422267428319,
+          "cells": [
+            {
+              "generation": 300,
+              "nEvaluations": 90300,
+              "value": 166.70623695360916,
+              "percent": -0.2011406311890263
+            }
+          ]
+        },
+        {
+          "id": "cmmd_vs_stratified_source_y_true",
+          "label": "CMMD vs source class",
+          "direction": "lower",
+          "baseline": 0.06158136693912297,
+          "cells": [
+            {
+              "generation": 300,
+              "nEvaluations": 90300,
+              "value": 0.07885073962854428,
+              "percent": 28.043178558366783
+            }
+          ]
+        },
+        {
+          "id": "cmmd_vs_stratified_predicted_class",
+          "label": "CMMD vs predicted class",
+          "direction": "lower",
+          "baseline": 0.06824100112234888,
+          "cells": [
+            {
+              "generation": 300,
+              "nEvaluations": 90300,
+              "value": 0.0702270865575727,
+              "percent": 2.910399030727857
+            }
+          ]
+        },
+        {
+          "id": "kid_std_cf_vs_originals",
+          "label": "KID std",
+          "direction": "lower",
+          "baseline": 0.001936066779308021,
+          "cells": [
+            {
+              "generation": 300,
+              "nEvaluations": 90300,
+              "value": 0.0023699651937931776,
+              "percent": 22.411335142078016
+            }
+          ]
+        }
+      ]
+    },
+    "CS_50": {
+      "main": [
+        {
+          "id": "l2_distance",
+          "label": "L2",
+          "direction": "lower",
+          "baseline": 1.6945935545982145,
+          "cells": [
+            {
+              "generation": 100,
+              "nEvaluations": 30300,
+              "value": 2.022956441966196,
+              "percent": 19.377088180052453
+            },
+            {
+              "generation": 200,
+              "nEvaluations": 60300,
+              "value": 1.7792718123118818,
+              "percent": 4.996965643112246
+            },
+            {
+              "generation": 300,
+              "nEvaluations": 90300,
+              "value": 1.8494117246425075,
+              "percent": 9.136006072028295
+            }
+          ]
+        },
+        {
+          "id": "sparsity_frac",
+          "label": "Sparsity",
+          "direction": "lower",
+          "baseline": 0.00443359375,
+          "cells": [
+            {
+              "generation": 100,
+              "nEvaluations": 30300,
+              "value": 0.006591796875,
+              "percent": 48.6784140969163
+            },
+            {
+              "generation": 200,
+              "nEvaluations": 60300,
+              "value": 0.005374348958333334,
+              "percent": 21.218795888399423
+            },
+            {
+              "generation": 300,
+              "nEvaluations": 90300,
+              "value": 0.004912109375,
+              "percent": 10.792951541850226
+            }
+          ]
+        },
+        {
+          "id": "ssim_to_original",
+          "label": "SSIM to original",
+          "direction": "higher",
+          "baseline": 0.9712946832180023,
+          "cells": [
+            {
+              "generation": 100,
+              "nEvaluations": 30300,
+              "value": 0.9638427799940109,
+              "percent": -0.7672134268564528
+            },
+            {
+              "generation": 200,
+              "nEvaluations": 60300,
+              "value": 0.9713195645809174,
+              "percent": 0.0025616698356346816
+            },
+            {
+              "generation": 300,
+              "nEvaluations": 90300,
+              "value": 0.9692432230710983,
+              "percent": -0.21120883109410563
+            }
+          ]
+        },
+        {
+          "id": "lpips_to_original",
+          "label": "LPIPS to original",
+          "direction": "lower",
+          "baseline": 0.043688200734304704,
+          "cells": [
+            {
+              "generation": 100,
+              "nEvaluations": 30300,
+              "value": 0.048531058463249795,
+              "percent": 11.085047329821478
+            },
+            {
+              "generation": 200,
+              "nEvaluations": 60300,
+              "value": 0.04139679875807815,
+              "percent": -5.244898937729219
+            },
+            {
+              "generation": 300,
+              "nEvaluations": 90300,
+              "value": 0.04355727445196862,
+              "percent": -0.2996833930798071
+            }
+          ]
+        },
+        {
+          "id": "p_pred_cf",
+          "label": "Predicted probability",
+          "direction": "higher",
+          "baseline": 0.8204688429832458,
+          "cells": [
+            {
+              "generation": 100,
+              "nEvaluations": 30300,
+              "value": 0.8077799013257027,
+              "percent": -1.5465476557776254
+            },
+            {
+              "generation": 200,
+              "nEvaluations": 60300,
+              "value": 0.7817378568649292,
+              "percent": -4.720591945635587
+            },
+            {
+              "generation": 300,
+              "nEvaluations": 90300,
+              "value": 0.7926374566555023,
+              "percent": -3.3921320188768993
+            }
+          ]
+        },
+        {
+          "id": "frechet_inception_distance_cf_vs_originals",
+          "label": "FID (CF vs originals)",
+          "direction": "lower",
+          "baseline": 29.246506439162886,
+          "cells": [
+            {
+              "generation": 100,
+              "nEvaluations": 30300,
+              "value": 34.48227167666215,
+              "percent": 17.902190295413373
+            },
+            {
+              "generation": 200,
+              "nEvaluations": 60300,
+              "value": 29.49790981315357,
+              "percent": 0.8596013835486308
+            },
+            {
+              "generation": 300,
+              "nEvaluations": 90300,
+              "value": 30.571104169864498,
+              "percent": 4.529080194439543
+            }
+          ]
+        },
+        {
+          "id": "kid_mean_cf_vs_originals",
+          "label": "KID",
+          "direction": "lower",
+          "baseline": -0.005009434185922146,
+          "cells": [
+            {
+              "generation": 100,
+              "nEvaluations": 30300,
+              "value": -0.0029571889899671078,
+              "percent": 40.96760471915965
+            },
+            {
+              "generation": 200,
+              "nEvaluations": 60300,
+              "value": -0.005525538697838783,
+              "percent": -10.302650813679309
+            },
+            {
+              "generation": 300,
+              "nEvaluations": 90300,
+              "value": -0.005617337301373482,
+              "percent": -12.13516522803527
+            }
+          ]
+        },
+        {
+          "id": "cmmd_orig_vs_cf_distribution",
+          "label": "CMMD (original vs CF)",
+          "direction": "lower",
+          "baseline": 0.06896768110520313,
+          "cells": [
+            {
+              "generation": 100,
+              "nEvaluations": 30300,
+              "value": 0.0949358916879639,
+              "percent": 37.65272395217831
+            },
+            {
+              "generation": 200,
+              "nEvaluations": 60300,
+              "value": 0.06925824476344822,
+              "percent": 0.4213040856076717
+            },
+            {
+              "generation": 300,
+              "nEvaluations": 90300,
+              "value": 0.07414234056479785,
+              "percent": 7.503020801440763
+            }
+          ]
+        }
+      ],
+      "extra": [
+        {
+          "id": "ssim_to_random_pred_class",
+          "label": "SSIM to predicted class",
+          "direction": "higher",
+          "baseline": 0.09884284276282415,
+          "cells": [
+            {
+              "generation": 300,
+              "nEvaluations": 90300,
+              "value": 0.08440728684945498,
+              "percent": -14.604553561867547
+            }
+          ]
+        },
+        {
+          "id": "lpips_to_random_pred_class",
+          "label": "LPIPS to predicted class",
+          "direction": "lower",
+          "baseline": 0.4562945953011513,
+          "cells": [
+            {
+              "generation": 300,
+              "nEvaluations": 90300,
+              "value": 0.46531698405742644,
+              "percent": 1.9773165952843321
+            }
+          ]
+        },
+        {
+          "id": "inception_sqdist_to_source_class_mean",
+          "label": "Embedding distance to source class",
+          "direction": "lower",
+          "baseline": 90.76712267957114,
+          "cells": [
+            {
+              "generation": 300,
+              "nEvaluations": 90300,
+              "value": 92.64570831019051,
+              "percent": 2.0696763047686435
+            }
+          ]
+        },
+        {
+          "id": "inception_sqdist_to_predicted_class_mean",
+          "label": "Embedding distance to predicted class",
+          "direction": "lower",
+          "baseline": 71.02678268549035,
+          "cells": [
+            {
+              "generation": 300,
+              "nEvaluations": 90300,
+              "value": 77.15332073989659,
+              "percent": 8.625673052846578
+            }
+          ]
+        },
+        {
+          "id": "frechet_inception_distance_vs_source_y_true",
+          "label": "FID vs source class",
+          "direction": "lower",
+          "baseline": 169.70900950922146,
+          "cells": [
+            {
+              "generation": 300,
+              "nEvaluations": 90300,
+              "value": 169.8532100506769,
+              "percent": 0.08496929059479169
+            }
+          ]
+        },
+        {
+          "id": "frechet_inception_distance_vs_predicted_class",
+          "label": "FID vs predicted class",
+          "direction": "lower",
+          "baseline": 171.62035947864274,
+          "cells": [
+            {
+              "generation": 300,
+              "nEvaluations": 90300,
+              "value": 170.54373179159273,
+              "percent": -0.6273309823616744
+            }
+          ]
+        },
+        {
+          "id": "cmmd_vs_stratified_source_y_true",
+          "label": "CMMD vs source class",
+          "direction": "lower",
+          "baseline": 0.08517454784295886,
+          "cells": [
+            {
+              "generation": 300,
+              "nEvaluations": 90300,
+              "value": 0.10051566783109145,
+              "percent": 18.011389994600126
+            }
+          ]
+        },
+        {
+          "id": "cmmd_vs_stratified_predicted_class",
+          "label": "CMMD vs predicted class",
+          "direction": "lower",
+          "baseline": 0.08455863846101863,
+          "cells": [
+            {
+              "generation": 300,
+              "nEvaluations": 90300,
+              "value": 0.09859023277369872,
+              "percent": 16.59392176607553
+            }
+          ]
+        },
+        {
+          "id": "kid_std_cf_vs_originals",
+          "label": "KID std",
+          "direction": "lower",
+          "baseline": 0.002584818284958601,
+          "cells": [
+            {
+              "generation": 300,
+              "nEvaluations": 90300,
+              "value": 0.002004793379455805,
+              "percent": -22.439678211734947
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

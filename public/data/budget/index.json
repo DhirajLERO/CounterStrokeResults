@@ -1,0 +1,85 @@
+{
+  "readouts": [
+    {
+      "id": "CS_sparse",
+      "label": "CS_sparse"
+    },
+    {
+      "id": "CS_prox",
+      "label": "CS_prox"
+    },
+    {
+      "id": "CS_50",
+      "label": "CS_50"
+    }
+  ],
+  "datasets": [
+    {
+      "id": "mnist",
+      "label": "MNIST",
+      "shares": "6% \u00b7 12% \u00b7 18%",
+      "mainBudget": "501,000",
+      "checkpoints": [
+        {
+          "generation": 100,
+          "nEvaluations": 30300
+        },
+        {
+          "generation": 200,
+          "nEvaluations": 60300
+        },
+        {
+          "generation": 300,
+          "nEvaluations": 90300
+        }
+      ]
+    },
+    {
+      "id": "cifar10",
+      "label": "CIFAR-10",
+      "shares": "6% \u00b7 12% \u00b7 18%",
+      "mainBudget": "501,000",
+      "checkpoints": [
+        {
+          "generation": 100,
+          "nEvaluations": 30300
+        },
+        {
+          "generation": 200,
+          "nEvaluations": 60300
+        },
+        {
+          "generation": 300,
+          "nEvaluations": 90300
+        }
+      ]
+    },
+    {
+      "id": "imagenet100",
+      "label": "ImageNet-100",
+      "shares": "3% \u00b7 6% \u00b7 9%",
+      "mainBudget": "1,002,000",
+      "checkpoints": [
+        {
+          "generation": 100,
+          "nEvaluations": 30300
+        },
+        {
+          "generation": 200,
+          "nEvaluations": 60300
+        },
+        {
+          "generation": 300,
+          "nEvaluations": 90300
+        }
+      ]
+    }
+  ],
+  "notes": {
+    "percent": "Each percentage is (checkpoint \u2212 multirun) / |multirun|. A positive percentage means the checkpoint is larger than that readout\u2019s multirun row.",
+    "kid": "On CIFAR-10 and ImageNet-100, KID is negative on both sides. A more negative KID is the closer distribution, so a negative percentage there means the budget run is closer than the multirun.",
+    "imagenetValidity": "ImageNet generation 100 flips 99 of 100 images, so that column averages the 99 flips. Generations 200 and 300 include all 100.",
+    "grammar": "The grammar ablation keeps the representation, the initialisation, and the same pick rules, and drops selection, crossover, and mutation. Only L2 and sparsity are logged. MNIST and CIFAR averages use the paper images present in the log. ImageNet uses the full multirun as the baseline, and counts a pixel once if two channels change, so those sparsity marks sit slightly low."
+  },
+  "radar": "figures/eval_budget_radar.png"
+}

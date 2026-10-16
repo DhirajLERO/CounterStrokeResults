@@ -110,7 +110,6 @@ function Tables({
         {meta.label} · {readout} · generations 100, 200, and 300 are {meta.shares} of the main-run evaluation budget ({meta.mainBudget} evaluations). {notes.percent}
       </p>
       {meta.id !== "mnist" ? <p className="mt-2 max-w-3xl text-sm text-muted">{notes.kid}</p> : null}
-      {meta.id === "imagenet100" ? <p className="mt-2 max-w-3xl text-sm text-muted">{notes.imagenetValidity}</p> : null}
       <div className="mt-4 overflow-x-auto figure-well p-4">
         <MetricTable rows={rows.main} checkpoints={meta.checkpoints} />
       </div>
@@ -184,8 +183,7 @@ function GrammarLines({
     <section>
       <h2 className="text-lg font-medium">Grammar against evolution</h2>
       <p className="mt-1 max-w-3xl text-sm text-muted">
-        {readout} · percent above the multirun. Zero is the full solution. {note} This series uses{" "}
-        {block.grammar.sharedN} of {block.grammar.paperN} paper images.
+        {readout} · percent above the multirun. Zero is the full solution. {note}
       </p>
       <div className="mt-4 grid gap-6 lg:grid-cols-2">
         {charts.map((chart) => (
@@ -256,7 +254,6 @@ function GrammarLines({
           CS_sparse on top and CS_prox below. The outer ring is that readout’s multirun row. Spokes run clockwise from
           L2 and are identified by the colour key. Blue polygons are generations 100, 200, and 300. Magenta marks are
           the grammar at about 30k, 60k, and 90k evaluations, and only L2 and sparsity are drawn for that ablation.
-          CS_50 tracks CS_sparse and is not on this figure.
         </figcaption>
       </figure>
     </section>

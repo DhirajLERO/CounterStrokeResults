@@ -218,7 +218,7 @@ export type BudgetIndex = {
     mainBudget: string;
     checkpoints: BudgetCheckpoint[];
   }[];
-  notes: { percent: string; kid: string; imagenetValidity: string; grammar: string };
+  notes: { percent: string; kid: string; grammar: string };
   radar: string;
 };
 

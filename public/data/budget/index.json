@@ -78,8 +78,7 @@
   "notes": {
     "percent": "Each percentage is (checkpoint \u2212 multirun) / |multirun|. A positive percentage means the checkpoint is larger than that readout\u2019s multirun row.",
     "kid": "On CIFAR-10 and ImageNet-100, KID is negative on both sides. A more negative KID is the closer distribution, so a negative percentage there means the budget run is closer than the multirun.",
-    "imagenetValidity": "ImageNet generation 100 flips 99 of 100 images, so that column averages the 99 flips. Generations 200 and 300 include all 100.",
-    "grammar": "The grammar ablation keeps the representation, the initialisation, and the same pick rules, and drops selection, crossover, and mutation. Only L2 and sparsity are logged. MNIST and CIFAR averages use the paper images present in the log. ImageNet uses the full multirun as the baseline, and counts a pixel once if two channels change, so those sparsity marks sit slightly low."
+    "grammar": "The grammar ablation keeps the representation, the initialisation, and the same pick rules, and drops selection, crossover, and mutation. Only L2 and sparsity are logged."
   },
   "radar": "figures/eval_budget_radar.png"
 }
